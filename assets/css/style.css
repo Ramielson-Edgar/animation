@@ -290,13 +290,14 @@ li {
 }
 
 .icon-us-sek {
-  top: 70px;
-  left: 420px;
+  top: 250px;
+  left: 700px;
   width: 220px;
   height: 90px;
+  z-index: 1;
   background-image: url("../../icons/icon-us-sek.svg");
-  -webkit-animation-delay: 18s;
-          animation-delay: 18s;
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
 }
 
 .icon-us-cn {

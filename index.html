@@ -10,15 +10,13 @@
 
     <title>Document</title>
   </head>
-  <body>
-    <!-- <div class="bg">
 
-      
+  <body>
+    <div class="bg">
       <ul class="dropdown-menu">
         <li>
           <a href="#">Deposit & withdrawals</a>
         </li>
-
         <li class="item-menu">
           <a href="#">Allpips Account </a>
           <ul class="allpips-menu">
@@ -52,7 +50,7 @@
           </ul>
         </li>
       </ul>
-    </div> -->
+    </div>
 
     <div class="container animation-container">
       <div class="group">
@@ -75,12 +73,12 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
-    <!-- <script>
+    <script>
       $(document).ready(function () {
         $("li").hover(
           function () {
-            $(this).find(".allpips-menu").show("fast").delay();
-            $(this).find(".sub__menu").show("fast").delay();
+            $(this).find(".allpips-menu").show(400).delay();
+            $(this).find(".sub__menu").show(400).delay();
           },
           function () {
             $(this).find(".allpips-menu").hide("fast").delay();
@@ -88,7 +86,7 @@
           }
         );
       });
-    </script> -->
+    </script>
 
     <script>
       let tl = gsap.timeline({
