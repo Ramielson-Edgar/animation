@@ -124,7 +124,7 @@ li {
   left: 500px;
   width: 200px;
   height: 180px;
-  background-image: url("/icons/icon-tesla.svg");
+  background-image: url("../../icons/icon-tesla.svg");
   z-index: 2;
   -webkit-animation-delay: 14s;
           animation-delay: 14s;
@@ -181,7 +181,7 @@ li {
   left: 400px;
   width: 200px;
   height: 180px;
-  background-image: url("/icons/icon-apple.svg");
+  background-image: url("../../icons/icon-apple.svg");
   -webkit-animation-delay: 8s;
           animation-delay: 8s;
 }
