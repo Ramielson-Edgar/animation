@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--FONTS-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div class="bg">
+
+      
+      <ul class="dropdown-menu">
+        <li>
+          <a href="#">Deposit & withdrawals</a>
+        </li>
+
+        <li class="item-menu">
+          <a href="#">Allpips Account </a>
+          <ul class="allpips-menu">
+            <li>
+              <a href="https://adrofx.com/fiat-account">Fiat Account</a>
+            </li>
+            <li>
+              <a href="https://adrofx.com/crypto">Crypto Account</a>
+            </li>
+            <li>
+              <a href="https://adrofx.com/cent-account">Cent Account</a>
+            </li>
+            <li>
+              <a href="https://adrofx.com/demo-trading-account">Demo Account</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="item-menu">
+          <a href="#"> mt4 Accounts</a>
+          <ul class="sub__menu">
+            <li>
+              <a href="#">account-1</a>
+            </li>
+            <li>
+              <a href="#">account-2</a>
+            </li>
+            <li>
+              <a href="#">account-3</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div> -->
+
+    <div class="container animation-container">
+      <div class="group">
+        <i class="img icon-apple"></i>
+        <i class="img icon-btc"></i>
+        <i class="img icon-er-us"></i>
+        <i class="img icon-er-zar"></i>
+        <i class="img icon-eth"></i>
+        <i class="img icon-gold"></i>
+        <i class="img icon-letcoin"></i>
+        <i class="img icon-nasdaq"></i>
+        <i class="img icon-ripple"></i>
+        <i class="img icon-twitter"></i>
+        <i class="img icon-us-dkk"></i>
+        <i class="img icon-us-sek"></i>
+        <i class="img icon-tesla"></i>
+        <i class="img icon-us-cn"></i>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+    <!-- <script>
+      $(document).ready(function () {
+        $("li").hover(
+          function () {
+            $(this).find(".allpips-menu").show("fast").delay();
+            $(this).find(".sub__menu").show("fast").delay();
+          },
+          function () {
+            $(this).find(".allpips-menu").hide("fast").delay();
+            $(this).find(".sub__menu").hide("fast").delay();
+          }
+        );
+      });
+    </script> -->
+
+    <script>
+      let tl = gsap.timeline({
+        defaults: { ease: "power4.inOut", duration: 2 },
+      });
+
+      tl.to(".img", {
+        stagger: 0.4,
+        scale: 1,
+        "clip-path": "circle(50.5% at 50% 50%)",
+        opacity: 1,
+        delay: 0.5,
+        duration: 1.8,
+      });
+    </script>
+  </body>
+</html>

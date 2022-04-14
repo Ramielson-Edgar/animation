@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  height: 100vh;
+  line-height: 1.3;
+
+  background-color: rgb(130, 130, 130);
+  margin: 0;
+}
+
+header,
+p {
+  margin: 0;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.button-center {
+  width: 100%;
+  text-align: center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.bg {
+  background-color: #fff;
+}
+
+.main-nav {
+  padding: 30px;
+}
+
+li {
+  position: relative;
+  background-color: #1e88e5;
+  width: 179px;
+  height: 40px;
+}
+
+.allpips-menu,
+.sub__menu {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+
+  display: none;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 10px 16px;
+
+  background-color: #1e88e5;
+
+  z-index: 30;
+
+  a {
+    color: rgb(255, 255, 255);
+  }
+}
+
+.group {
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  min-height: 875px;
+}
+
+.img {
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+
+  margin: -50px 0 0 -50px;
+ 
+  animation: scale 10s alternate-reverse infinite ease-in-out;
+
+  transform: scale(0);
+
+  -webkit-clip-path: circle(0.5% at 50% 50%);
+  clip-path: circle(0.5% at 50% 50%);
+  transform: translateY(0px);
+  opacity: 0;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-tesla {
+  position: relative;
+  top: 280px;
+  left: 500px;
+
+  width: 200px;
+  height: 180px;
+  background-image: url("../../icons/icon-tesla.svg");
+  z-index: 2;
+  animation-delay: 14s;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1) translateY(5px)  ;
+  }
+  100% {
+    transform: scale(1) translateY(0px) ;
+  }
+  40% {
+    transform: scale(1) translateY(5px) ;
+  }
+
+  15% {
+    transform: scale(1.1) translateY(5px)  ;
+  }
+
+  25% {
+    transform: scale(1) translateY(0px)  ;
+  }
+}
+
+.icon-apple {
+  top: 470px;
+  left: 400px;
+
+  width: 200px;
+  height: 180px;
+  background-image: url("../../icons/icon-apple.svg");
+  animation-delay: 8s;
+}
+
+.icon-btc {
+  top: 140px;
+  left: 600px;
+
+  width: 90px;
+  height: 60px;
+
+  background-image: url("../../icons/icon-btc.svg");
+  animation-delay: 16s;
+}
+
+.icon-er-us {
+  top: 340px;
+  left: 680px;
+
+  width: 150px;
+  height: 150px;
+  background-image: url("../../icons/icon-er-us.svg");
+  animation-delay: 18s;
+}
+
+.icon-er-zar {
+  top: 600px;
+  left: 340px;
+
+  width: 150px;
+  height: 90px;
+  background-image: url("../../icons/icon-us-zar.svg");
+  animation-delay: 4s;
+}
+
+.icon-eth {
+  top: 330px;
+  left: 320px;
+
+  width: 180px;
+  height: 170px;
+  background-image: url("../../icons/icon-eth.svg");
+  animation-delay: 10s;
+}
+
+.icon-gold {
+  top: 250px;
+  left: 430px;
+
+  width: 150px;
+  height: 120px;
+  background-image: url("../../icons/icon-gold.svg");
+  animation-delay: 6s;
+  z-index: -1;
+}
+
+.icon-letcoin {
+  top: 600px;
+  left: 500px;
+
+  width: 150px;
+  height: 120px;
+  background-image: url("../../icons/icon-litecoin.svg");
+  animation-delay: 2s;
+}
+
+.icon-nasdaq {
+  top: 140px;
+  left: 500px;
+
+  width: 150px;
+  height: 120px;
+  background-image: url("../../icons/icon-nasdaq.svg");
+  animation-delay: 0s;
+  z-index: -1;
+}
+
+.icon-ripple {
+  top: 190px;
+  left: 430px;
+
+  width: 120px;
+  height: 70px;
+  background-image: url("../../icons/icon-ripple.svg");
+  animation-delay: 14s;
+}
+
+.icon-twitter {
+  top: 470px;
+  left: 650px;
+
+  width: 220px;
+  height: 100px;
+  background-image: url("../../icons/icon-twitter.svg");
+  animation-delay: 5s;
+}
+
+.icon-us-dkk {
+  top: 150px;
+  left: 670px;
+
+  width: 220px;
+  height: 100px;
+  background-image: url("../../icons/icon-us-dkk.svg");
+  animation-delay: 14s;
+  z-index: 2;
+}
+
+.icon-us-sek {
+  top: 70px;
+  left: 420px;
+
+  width: 220px;
+  height: 90px;
+  background-image: url("../../icons/icon-us-sek.svg");
+  animation-delay: 18s;
+}
+
+.icon-us-cn {
+  top: 200px;
+  left: 580px;
+
+  width: 220px;
+  height: 170px;
+  background-image: url("../../icons/icon-us-cn.svg");
+  animation-delay: 12s;
+}

@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  height: 100vh;
+  line-height: 1.3;
+  background-color: #828282;
+  margin: 0;
+}
+
+header,
+p {
+  margin: 0;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.button-center {
+  width: 100%;
+  text-align: center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.bg {
+  background-color: #fff;
+}
+
+.main-nav {
+  padding: 30px;
+}
+
+li {
+  position: relative;
+  background-color: #1e88e5;
+  width: 179px;
+  height: 40px;
+}
+
+.allpips-menu,
+.sub__menu {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  display: none;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 10px 16px;
+  background-color: #1e88e5;
+  z-index: 30;
+}
+
+.allpips-menu a,
+.sub__menu a {
+  color: white;
+}
+
+.group {
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  min-height: 875px;
+}
+
+.img {
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  margin: -50px 0 0 -50px;
+  animation: scale 10s alternate-reverse infinite ease-in-out;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-clip-path: circle(0.5% at 50% 50%);
+  clip-path: circle(0.5% at 50% 50%);
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-tesla {
+  position: relative;
+  top: 280px;
+  left: 500px;
+  width: 200px;
+  height: 180px;
+  background-image: url("/icons/icon-tesla.svg");
+  z-index: 2;
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(1) translateY(5px);
+            transform: scale(1) translateY(5px);
+  }
+  100% {
+    -webkit-transform: scale(1) translateY(0px);
+            transform: scale(1) translateY(0px);
+  }
+  40% {
+    -webkit-transform: scale(1) translateY(5px);
+            transform: scale(1) translateY(5px);
+  }
+  15% {
+    -webkit-transform: scale(1.1) translateY(5px);
+            transform: scale(1.1) translateY(5px);
+  }
+  25% {
+    -webkit-transform: scale(1) translateY(0px);
+            transform: scale(1) translateY(0px);
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1) translateY(5px);
+            transform: scale(1) translateY(5px);
+  }
+  100% {
+    -webkit-transform: scale(1) translateY(0px);
+            transform: scale(1) translateY(0px);
+  }
+  40% {
+    -webkit-transform: scale(1) translateY(5px);
+            transform: scale(1) translateY(5px);
+  }
+  15% {
+    -webkit-transform: scale(1.1) translateY(5px);
+            transform: scale(1.1) translateY(5px);
+  }
+  25% {
+    -webkit-transform: scale(1) translateY(0px);
+            transform: scale(1) translateY(0px);
+  }
+}
+
+.icon-apple {
+  top: 470px;
+  left: 400px;
+  width: 200px;
+  height: 180px;
+  background-image: url("/icons/icon-apple.svg");
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.icon-btc {
+  top: 140px;
+  left: 600px;
+  width: 90px;
+  height: 60px;
+  background-image: url("../../icons/icon-btc.svg");
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
+
+.icon-er-us {
+  top: 340px;
+  left: 680px;
+  width: 150px;
+  height: 150px;
+  background-image: url("../../icons/icon-er-us.svg");
+  -webkit-animation-delay: 18s;
+          animation-delay: 18s;
+}
+
+.icon-er-zar {
+  top: 600px;
+  left: 340px;
+  width: 150px;
+  height: 90px;
+  background-image: url("../../icons/icon-us-zar.svg");
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.icon-eth {
+  top: 330px;
+  left: 320px;
+  width: 180px;
+  height: 170px;
+  background-image: url("../../icons/icon-eth.svg");
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+.icon-gold {
+  top: 250px;
+  left: 430px;
+  width: 150px;
+  height: 120px;
+  background-image: url("../../icons/icon-gold.svg");
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  z-index: -1;
+}
+
+.icon-letcoin {
+  top: 600px;
+  left: 500px;
+  width: 150px;
+  height: 120px;
+  background-image: url("../../icons/icon-litecoin.svg");
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.icon-nasdaq {
+  top: 140px;
+  left: 500px;
+  width: 150px;
+  height: 120px;
+  background-image: url("../../icons/icon-nasdaq.svg");
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  z-index: -1;
+}
+
+.icon-ripple {
+  top: 190px;
+  left: 430px;
+  width: 120px;
+  height: 70px;
+  background-image: url("../../icons/icon-ripple.svg");
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+
+.icon-twitter {
+  top: 470px;
+  left: 650px;
+  width: 220px;
+  height: 100px;
+  background-image: url("../../icons/icon-twitter.svg");
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.icon-us-dkk {
+  top: 150px;
+  left: 670px;
+  width: 220px;
+  height: 100px;
+  background-image: url("../../icons/icon-us-dkk.svg");
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+  z-index: 2;
+}
+
+.icon-us-sek {
+  top: 70px;
+  left: 420px;
+  width: 220px;
+  height: 90px;
+  background-image: url("../../icons/icon-us-sek.svg");
+  -webkit-animation-delay: 18s;
+          animation-delay: 18s;
+}
+
+.icon-us-cn {
+  top: 200px;
+  left: 580px;
+  width: 220px;
+  height: 170px;
+  background-image: url("../../icons/icon-us-cn.svg");
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+/*# sourceMappingURL=style.css.map */
