@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+:root {
+  --gradient: linear-gradient(45deg,
+      #9CAFDB,
+      #FF7079 #845ec2,
+      #d65db1,
+    );
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -22,7 +30,7 @@ body {
   font-size: 14px;
   height: 100vh;
   line-height: 1.3;
-  background-color: #828282;
+  background-color: white;
   margin: 0;
 }
 
@@ -73,11 +81,23 @@ li {
 }
 
 .allpips-menu,
-.sub__menu {
+.mt4-menu {
   position: absolute;
   top: 0%;
   left: 100%;
   display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  opacity: 0;
+  max-width: 160px;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   gap: 10px;
@@ -87,11 +107,53 @@ li {
 }
 
 .allpips-menu a,
-.sub__menu a {
+.mt4-menu a {
   color: white;
 }
 
+@-webkit-keyframes show-menu {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes show-menu {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.item-menu:hover .mt4-menu,
+.item-menu:hover .allpips-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  -webkit-animation: show-menu .3s ease-in;
+          animation: show-menu .3s ease-in;
+}
+
+.mt4-menu-item,
+.allpips-menu-item {
+  width: 130px;
+  font-size: 1rem;
+}
+
+.mt4-menu-item a,
+.allpips-menu-item a {
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 16px;
+}
+
 .group {
+  top: 60px;
   right: 0;
   width: 100%;
   height: 100%;
@@ -308,5 +370,82 @@ li {
   background-image: url("../../icons/icon-us-cn.svg");
   -webkit-animation-delay: 12s;
           animation-delay: 12s;
+}
+
+.mb-t {
+  margin-top: 70px;
+}
+
+.wrap {
+  max-width: 420px;
+}
+
+.copy-trading-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.copy-trading-header .copy-trading-heading {
+  font-family: "Roboto";
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+.copy-trading-header .copy-trading-desc {
+  line-height: 1.5;
+}
+
+.btn-gradient:hover,
+.btn-gradient:focus,
+.btn-gradient {
+  display: block;
+  cursor: pointer;
+  font-family: "Roboto";
+  color: #fff;
+  font-weight: normal;
+  width: 194px;
+  height: 54px;
+  padding: 17px 27px;
+  background-image: linear-gradient(94.61deg, #9CAFDB -4.13%, #FF7079 117.26%);
+  border-radius: 4px;
+}
+
+.text-gradient {
+  background-image: linear-gradient(94.61deg, #9CAFDB -4.13%, #FF7079 117.26%, #d65db1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 300%;
+  -webkit-animation: bg-gradient 5s infinite alternate;
+          animation: bg-gradient 5s infinite alternate;
+}
+
+@-webkit-keyframes bg-gradient {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes bg-gradient {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 /*# sourceMappingURL=style.css.map */

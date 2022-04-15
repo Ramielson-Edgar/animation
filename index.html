@@ -4,15 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
     <!--FONTS-->
     <link rel="stylesheet" href="assets/css/style.css" />
-
     <title>Document</title>
   </head>
 
   <body>
-    <div class="bg">
+    <!-- <div class="bg">
       <ul class="dropdown-menu">
         <li>
           <a href="#">Deposit & withdrawals</a>
@@ -20,16 +25,16 @@
         <li class="item-menu">
           <a href="#">Allpips Account </a>
           <ul class="allpips-menu">
-            <li>
+            <li class="allpips-menu-item">
               <a href="https://adrofx.com/fiat-account">Fiat Account</a>
             </li>
-            <li>
+            <li class="allpips-menu-item">
               <a href="https://adrofx.com/crypto">Crypto Account</a>
             </li>
-            <li>
+            <li class="allpips-menu-item">
               <a href="https://adrofx.com/cent-account">Cent Account</a>
             </li>
-            <li>
+            <li class="allpips-menu-item">
               <a href="https://adrofx.com/demo-trading-account">Demo Account</a>
             </li>
           </ul>
@@ -37,22 +42,22 @@
 
         <li class="item-menu">
           <a href="#"> mt4 Accounts</a>
-          <ul class="sub__menu">
-            <li>
+          <ul class="mt4-menu">
+            <li class="mt4-menu-item">
               <a href="#">account-1</a>
             </li>
-            <li>
+            <li class="mt4-menu-item">
               <a href="#">account-2</a>
             </li>
-            <li>
+            <li class="mt4-menu-item">
               <a href="#">account-3</a>
             </li>
           </ul>
         </li>
       </ul>
-    </div>
+    </div> -->
 
-    <div class="container animation-container">
+    <!-- <div class="container animation-container">
       <div class="group">
         <i class="img icon-apple"></i>
         <i class="img icon-btc"></i>
@@ -69,25 +74,44 @@
         <i class="img icon-tesla"></i>
         <i class="img icon-us-cn"></i>
       </div>
+    </div> -->
+
+    <div class="container mb-t">
+      <div class="row">
+        <div class="col-lg-4">
+          <img
+            class="img-fluid"
+            src="./two-phones.png"
+            alt="two phones"
+            width="371"
+            height="465"
+          />
+        </div>
+        <div class="col-lg-8">
+          <header class="copy-trading-header wrap">
+            <h2 class="mb-3 copy-trading-heading">
+              Earn by Copying the
+              <span class="text-gradient">Success of Top Traders</span>
+            </h2>
+            <p class="mb-3 copy-trading-desc">
+              Everyone can trade like a top trader. With Allpip's innovative
+              Copy Trading you can automatically copy the moves of other
+              investors. Find investors you believe in and replicate their
+              actions in real-time.
+            </p>
+            <a href="#" class="btn-gradient">Try Copy Trading Now</a>
+          </header>
+        </div>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("li").hover(
-          function () {
-            $(this).find(".allpips-menu").show(400).delay();
-            $(this).find(".sub__menu").show(400).delay();
-          },
-          function () {
-            $(this).find(".allpips-menu").hide("fast").delay();
-            $(this).find(".sub__menu").hide("fast").delay();
-          }
-        );
-      });
-    </script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script>
       let tl = gsap.timeline({
         defaults: { ease: "power4.inOut", duration: 2 },
