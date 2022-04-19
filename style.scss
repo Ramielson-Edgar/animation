@@ -94,6 +94,8 @@ ul {
   opacity: 0;
 }
 
+.two-phones {display: none;}
+
 // li {
 //   position: relative;
 //   background-color: #1e88e5;
@@ -407,14 +409,11 @@ ul {
     background-position: right;
   }
 }
+ 
 
 // SECTION
 .copy-trading-section {
   padding: 70px 0;
-
-  .split {
-    margin-left: 50px;
-  }
 
   .copy-trading-header {
     display: flex;
@@ -467,6 +466,16 @@ ul {
 
 .text-gradient {
   background-image: linear-gradient(94.61deg, #9cafdb -4.13%, #ff7079 117.26%, #d65db1);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 300%;
+  animation: bg-gradient 5s infinite alternate;
+}
+
+.start-gradient {
+  background-image: linear-gradient(94.61deg, #619dff  50.13%, #ff7079 117.26%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -809,7 +818,15 @@ ul {
       }
     }
   }
- 
+
+  
+  .phone-left,
+  .phone-right {
+    display: none;
+  }
+  
+  
+  .two-phones {display: block;}
 }
 
 @media (max-width:320px) {

@@ -95,6 +95,10 @@ ul {
   opacity: 0;
 }
 
+.two-phones {
+  display: none;
+}
+
 .group {
   top: 60px;
   right: 0;
@@ -386,10 +390,6 @@ ul {
   padding: 70px 0;
 }
 
-.copy-trading-section .split {
-  margin-left: 50px;
-}
-
 .copy-trading-section .copy-trading-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -447,6 +447,16 @@ ul {
 
 .text-gradient {
   background-image: linear-gradient(94.61deg, #9cafdb -4.13%, #ff7079 117.26%, #d65db1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 300%;
+  -webkit-animation: bg-gradient 5s infinite alternate;
+          animation: bg-gradient 5s infinite alternate;
+}
+
+.start-gradient {
+  background-image: linear-gradient(94.61deg, #619dff 50.13%, #ff7079 117.26%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -805,6 +815,13 @@ ul {
   }
   .start-trading .start-trading-wrapper .base-btn {
     margin: 0 auto;
+  }
+  .phone-left,
+  .phone-right {
+    display: none;
+  }
+  .two-phones {
+    display: block;
   }
 }
 
