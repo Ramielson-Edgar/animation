@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 :root {
-  --gradient: linear-gradient(45deg,
-      #9CAFDB,
-      #FF7079 #845ec2,
-      #d65db1,
-    );
+  --gradient: linear-gradient(45deg, #9cafdb, #ff7079 #845ec2, #d65db1);
+  --background: #fff;
+  --blob: #fdfbfd;
+  --shades: inset 10px 0 40px #f7f8fc, inset -10px 0 20px #f7e1ef, inset -40px 10px 100px #c3c5ea;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f0c24;
+    --blob: #bca5e3;
+    --shades: inset 10px 0 40px #a174db, inset -10px 0 20px #40245e, inset -40px 10px 110px #1b1648;
+  }
 }
 
 html {
@@ -27,7 +34,7 @@ p {
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1rem;
   height: 100vh;
   line-height: 1.3;
   color: #000;
@@ -38,11 +45,6 @@ body {
 header,
 p {
   margin: 0;
-}
-
-.container {
-  width: 1140px;
-  margin: 0 auto;
 }
 
 .button-center {
@@ -61,11 +63,6 @@ ul {
   margin: 0;
 }
 
-.container {
-  width: 1140px;
-  margin: 0 auto;
-}
-
 .bg {
   background-color: #fff;
 }
@@ -74,83 +71,28 @@ ul {
   padding: 30px;
 }
 
-li {
-  position: relative;
-  background-color: #1e88e5;
-  width: 179px;
-  height: 40px;
-}
-
-.allpips-menu,
-.mt4-menu {
+.wave {
   position: absolute;
-  top: 0%;
-  left: 100%;
-  display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40vh;
+  z-index: -1;
+}
+
+.research-img {
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   opacity: 0;
-  max-width: 160px;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  gap: 10px;
-  padding: 10px 16px;
-  background-color: #1e88e5;
-  z-index: 30;
 }
 
-.allpips-menu a,
-.mt4-menu a {
-  color: white;
-}
-
-@-webkit-keyframes show-menu {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-@keyframes show-menu {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-.item-menu:hover .mt4-menu,
-.item-menu:hover .allpips-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 1;
-  -webkit-animation: show-menu .3s ease-in;
-          animation: show-menu .3s ease-in;
-}
-
-.mt4-menu-item,
-.allpips-menu-item {
-  width: 130px;
-  font-size: 1rem;
-}
-
-.mt4-menu-item a,
-.allpips-menu-item a {
-  color: #fff;
-  font-size: 14px;
-  padding: 10px 16px;
+.research-btn,
+.copy-btn {
+  position: relative;
+  top: 60px;
+  opacity: 0;
 }
 
 .group {
@@ -381,59 +323,45 @@ li {
   max-width: 420px;
 }
 
-.copy-trading-section {
-  padding: 70px 0;
-}
-
-.copy-trading-header {
+.split {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
-.copy-trading-header .copy-trading-heading {
-  font-family: "Roboto";
-  font-size: 1.875rem;
-  font-weight: 600;
-}
-
-.copy-trading-header .copy-trading-desc {
-  line-height: 1.5;
-}
-
-.btn-gradient:hover,
-.btn-gradient:focus,
-.btn-gradient {
+.base-btn:hover,
+.base-btn:focus,
+.base-btn {
   display: block;
-  cursor: pointer;
+  width: 200px;
   font-family: "Roboto";
-  color: #fff;
   font-weight: normal;
-  width: 194px;
-  height: 54px;
-  padding: 17px 27px;
-  background-image: linear-gradient(94.61deg, #9CAFDB -4.13%, #FF7079 117.26%);
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  padding: 20px;
   border-radius: 4px;
+  background-size: 300%;
+  background-image: linear-gradient(94.61deg, #9cafdb -4.13%, #ff7079 117.26%);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
-.text-gradient {
-  background-image: linear-gradient(94.61deg, #9CAFDB -4.13%, #FF7079 117.26%, #d65db1);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  background-size: 300%;
+.base-btn:hover:focus, .base-btn:hover:hover,
+.base-btn:focus:focus,
+.base-btn:focus:hover,
+.base-btn:focus,
+.base-btn:hover {
   -webkit-animation: bg-gradient 5s infinite alternate;
           animation: bg-gradient 5s infinite alternate;
+}
+
+.base-btn:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 @-webkit-keyframes bg-gradient {
@@ -454,29 +382,371 @@ li {
   }
 }
 
+.copy-trading-section {
+  padding: 70px 0;
+}
+
+.copy-trading-section .split {
+  margin-left: 50px;
+}
+
+.copy-trading-section .copy-trading-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.copy-trading-section .copy-trading-header .copy-trading-heading {
+  font-family: "Roboto";
+  font-size: 1.875rem;
+  font-weight: 600;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  opacity: 0;
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+}
+
+.copy-trading-section .copy-trading-header .copy-trading-desc {
+  line-height: 1.5;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  opacity: 0;
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+}
+
+.copy-trading-section .phone-left {
+  position: relative;
+  top: 50px;
+  left: 20px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  -webkit-transform: translateY(120px);
+          transform: translateY(120px);
+  z-index: 1;
+}
+
+.copy-trading-section .phone-right {
+  position: relative;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+}
+
+.text-gradient {
+  background-image: linear-gradient(94.61deg, #9cafdb -4.13%, #ff7079 117.26%, #d65db1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 300%;
+  -webkit-animation: bg-gradient 5s infinite alternate;
+          animation: bg-gradient 5s infinite alternate;
+}
+
+@keyframes bg-gradient {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
 .research-section {
   padding: 70px 0;
-  background-color: rgba(242, 242, 242, 0.392);
+  background-color: rgba(242, 242, 242, 0.2);
 }
 
 .research-section .research-header .research-heading {
   font-family: "Roboto";
   font-size: 1.875rem;
   font-weight: 600;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  opacity: 0;
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
 }
 
 .research-section .research-header .research-desc {
   line-height: 1.5;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  opacity: 0;
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
 }
 
-.research-section .research-header .btn-search {
-  width: 194px;
-  height: 54px;
-  padding: 17px 27px;
-  color: #fff;
-  background-image: linear-gradient(94.61deg, #9CAFDB -4.13%, #FF7079 117.26%);
-  border-radius: 4px;
-  font-weight: 500;
+.advantage-section {
+  position: relative;
+  padding: 70px 0;
+}
+
+.advantage-section::after, .advantage-section::before {
+  display: block;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  content: "";
+  min-height: 200px;
+  min-width: 200px;
+  width: 40%;
+  height: 60%;
+  background-color: var(--blob);
+  -webkit-box-shadow: var(--shades);
+          box-shadow: var(--shades);
+  background-size: 1600% 1600%;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-animation: transform 30s ease-in-out infinite both alternate, movement 20s ease-in-out infinite both;
+          animation: transform 30s ease-in-out infinite both alternate, movement 20s ease-in-out infinite both;
+}
+
+.advantage-section::after {
+  top: 54%;
+  left: 20%;
+  min-height: 50px;
+  min-width: 50px;
+  width: 5%;
+  height: 5%;
+  z-index: -1;
+}
+
+.advantage-section .advantage-header {
+  font-family: "Roboto";
+  font-weight: 900;
   text-align: center;
+}
+
+.advantage-section .advantage-wrapper .advantage__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.advantage-section .advantage-wrapper .advantage__list .advantage__item {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 120px 1fr;
+      grid-template-columns: 120px 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding: 10px;
+  height: 160px;
+  border: 2px solid rgba(187, 187, 187, 0.171);
+  background-image: rgba(255, 255, 255, 0.52);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+
+.advantage-section .advantage-wrapper .advantage__list .advantage__item::after, .advantage-section .advantage-wrapper .advantage__list .advantage__item::before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: -20px;
+  left: -20px;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(141.16deg, #b3ffeb 0%, #1ce4ae 101.45%);
+  border-radius: 15px;
+}
+
+.advantage-section .advantage-wrapper .advantage__list .advantage__item::after {
+  width: 24px;
+  height: 24px;
+  top: -3%;
+  left: -2%;
+  background-image: url("/arrow-down.svg");
+  background-size: contain;
+  background-position: center;
+}
+
+.advantage-section .advantage-wrapper .advantage__list .advantage__item .advantage__header {
+  color: #000;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.advantage-section .advantage-wrapper .advantage__list .advantage__item .advantage__desc {
+  font-size: 14px;
+}
+
+.advantage-section .advantage-wrapper .advantage__list .advantage__item .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+@-webkit-keyframes transform {
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
+}
+
+@keyframes transform {
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
+}
+
+@-webkit-keyframes movement {
+  0%,
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  50% {
+    -webkit-transform: translateY(20%) rotateY(10deg);
+            transform: translateY(20%) rotateY(10deg);
+  }
+}
+
+@keyframes movement {
+  0%,
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  50% {
+    -webkit-transform: translateY(20%) rotateY(10deg);
+            transform: translateY(20%) rotateY(10deg);
+  }
+}
+
+.start-trading {
+  position: relative;
+  padding: 70px 0;
+}
+
+.start-trading .start-trading-header .start-trading-heading {
+  font-family: "Roboto";
+  font-weight: 900;
+  text-align: center;
+}
+
+.start-trading .start-trading-wrapper .start-trading-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(260px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 10px;
+}
+
+.start-trading .start-trading-wrapper .start-trading-list .start-trading-item {
+  padding: 20px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  background-color: #f4f6f9;
+  -webkit-box-shadow: 40px 40px 50px -10px rgba(170, 160, 160, 0.1);
+          box-shadow: 40px 40px 50px -10px rgba(170, 160, 160, 0.1);
+}
+
+.start-trading .start-trading-wrapper .start-trading-list .start-trading-item .start-heading {
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.start-trading .start-trading-wrapper .start-trading-list .start-trading-item .start-body .link-register {
+  font-weight: 800;
+}
+
+@media (max-width: 991.98px) {
+  .research-section .images {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .research-section .text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .copy-trading-section .ml-120 {
+    padding-left: 0;
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 576.98px) {
+  .advantage-section .advantage-wrapper .advantage__list .advantage__item::before {
+    left: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  .advantage-section .advantage-wrapper .advantage__list .advantage__item::after {
+    top: -10px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

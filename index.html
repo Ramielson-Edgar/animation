@@ -10,16 +10,14 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-
     <!--FONTS-->
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Document</title>
   </head>
-
   <body>
     <!-- <div class="bg">
       <ul class="dropdown-menu">
-        <li>
+        <li class="item-menu">
           <a href="#">Deposit & withdrawals</a>
         </li>
         <li class="item-menu">
@@ -44,13 +42,26 @@
           <a href="#"> mt4 Accounts</a>
           <ul class="mt4-menu">
             <li class="mt4-menu-item">
-              <a href="#">account-1</a>
+              <a href="https://adrofx.com/standard-account">Standard Account</a>
             </li>
             <li class="mt4-menu-item">
-              <a href="#">account-2</a>
+              <a href="https://adrofx.com/premium-account"> Premium Account</a>
             </li>
             <li class="mt4-menu-item">
-              <a href="#">account-3</a>
+              <a href="https://adrofx.com/pro-account"> Pro Account</a>
+            </li>
+            <li class="mt4-menu-item">
+              <a href="https://adrofx.com/demo-trading-account">
+                Demo Account</a
+              >
+            </li>
+            <li class="mt4-menu-item">
+              <a href="https://adrofx.com/swap-free-account">
+                Swap-free Account</a
+              >
+            </li>
+            <li class="mt4-menu-item">
+              <a href="https://adrofx.com/micro-account">Micro Account</a>
             </li>
           </ul>
         </li>
@@ -79,16 +90,25 @@
     <section class="copy-trading-section">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-4">
-            <img
-              class="img-fluid"
-              src="./two-phones.png"
-              alt="two phones"
-              width="371"
-              height="465"
-            />
+          <div class="col-lg-6 mb-4">
+            <div class="split ml-120">
+              <img
+                class="img-fluid phone-left"
+                src="./left-phone-animation.png"
+                alt="phone"
+                width="180"
+                height="70"
+              />
+              <img
+                class="img-fluid phone-right"
+                src="./right-phone-animation.png"
+                alt="phones"
+                width="180"
+                height="70"
+              />
+            </div>
           </div>
-          <div class="col-lg-8">
+          <div class="col-lg-6">
             <header class="copy-trading-header wrap">
               <h2 class="mb-3 copy-trading-heading text-capitalize">
                 Earn by Copying the
@@ -100,7 +120,7 @@
                 investors. Find investors you believe in and replicate their
                 actions in real-time.
               </p>
-              <a href="#" class="btn-gradient">Try Copy Trading Now</a>
+              <a href="#" class="base-btn copy-btn">Try Copy Trading Now</a>
             </header>
           </div>
         </div>
@@ -110,7 +130,7 @@
     <section class="research-section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 text">
             <header class="research-header wrap">
               <h2 class="research-heading text-capitalize mb-3">
                 Let the pros do the research
@@ -122,11 +142,14 @@
                 professionals Trader there is a benefit for everyone one! Check
                 our top traders
               </p>
-              <a href="#" class="btn-search">Check Our Top Traders</a>
+              <a href="#" class="base-btn research-btn"
+                >Check Our Top Traders</a
+              >
             </header>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 mb-4 images">
             <img
+              class="img-fluid research-img"
               src="./research-img.png"
               alt="users"
               width="500"
@@ -137,25 +160,334 @@
       </div>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <section class="advantage-section">
+      <header class="advantage-header container mb-5">
+        <h2>TRADING ADVANTAGES OF ADROFX</h2>
+      </header>
+
+      <div class="advantage-wrapper container">
+        <ul class="advantage__list">
+          <li class="advantage__item">
+            <div class="img-container">
+              <img
+                class="img-fluid"
+                src="./icons/icon-markets.png"
+                alt=""
+                height="113"
+              />
+            </div>
+            <div class="advantage-body">
+              <p class="advantage__header mb-2">
+                Wide Range of Trading Instruments
+              </p>
+              <p class="advantage__desc">
+                Trade on the global markets with no limits
+              </p>
+            </div>
+          </li>
+          <li class="advantage__item">
+            <div class="img-container">
+              <img
+                class="img-fluid"
+                src="./icons/icon-gift.png"
+                alt=""
+                height="113"
+              />
+            </div>
+            <div class="advantage-body">
+              <p class="advantage__header mb-2">
+                Regular Contests and Promotions
+              </p>
+              <p class="advantage__desc">Unleash your trading power</p>
+            </div>
+          </li>
+          <li class="advantage__item">
+            <div class="img-container">
+              <img
+                class="img-fluid"
+                src="./icons/icon-protect-money.png"
+                alt=""
+                height="113"
+              />
+            </div>
+            <div class="advantage-body">
+              <p class="advantage__header mb-2">Protection of Funds</p>
+              <p class="advantage__desc">
+                Your funds are protected by industry-leading security protocols
+              </p>
+            </div>
+          </li>
+          <li class="advantage__item">
+            <div class="img-container">
+              <img
+                class="img-fluid"
+                src="./icons/icon-user.png"
+                alt=""
+                height="113"
+              />
+            </div>
+            <div class="advantage-body">
+              <p class="advantage__header mb-2">Privacy</p>
+              <p class="advantage__desc">
+                We will never share your private data without your permission
+              </p>
+            </div>
+          </li>
+          <li class="advantage__item">
+            <div class="img-container">
+              <img
+                class="img-fluid"
+                src="./icons/icon-education.png"
+                alt=""
+                height="113"
+              />
+            </div>
+            <div class="advantage-body">
+              <p class="advantage__header mb-2">
+                Trading Education from A to Z
+              </p>
+              <p class="advantage__desc">
+                Videos, Guides, Trading Analysis, and Signals. Get the right
+                knowledge on the way to become a professional trader
+              </p>
+            </div>
+          </li>
+          <li class="advantage__item">
+            <div class="img-container">
+              <img
+                class="img-fluid"
+                src="./icons/icon-percentages.png"
+                alt=""
+                height="113"
+              />
+            </div>
+            <div class="advantage-body">
+              <p class="advantage__header mb-2">
+                Tight spreads and no commission
+              </p>
+              <p class="advantage__desc">
+                Explore endless trading opportunities with tight spreads and no
+                commission.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="start-trading">
+      <header class="start-trading-header container mb-5">
+        <h2 class="start-trading-heading">
+          Start Trading <span class="text-gradient"> in 4 steps</span>
+        </h2>
+      </header>
+
+      <div class="start-trading-wrapper container">
+        <ul class="start-trading-list mb-5">
+          <li class="start-trading-item">
+            <div class="img-container mb-3">
+              <img src="./icons/icon-register.svg" alt="icons" height="40" />
+            </div>
+            <div class="start-body">
+              <p class="start-heading mb-2">Register</p>
+              <p class="start-desc mb-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+                est?
+              </p>
+              <a href="#" class="link-register"
+                >Register
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.0264 5.23175C11.4507 4.87819 12.0813 4.93551 12.4348 5.35979L15.7682 9.35979C16.1217 9.78407 16.0644 10.4146 15.6401 10.7682C15.2159 11.1218 14.5853 11.0644 14.2317 10.6402L10.8984 6.64016C10.5448 6.21588 10.6022 5.58532 11.0264 5.23175Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.0264 14.7682C10.6022 14.4146 10.5448 13.7841 10.8984 13.3598L14.2317 9.35979C14.5853 8.93551 15.2159 8.87819 15.6401 9.23175C16.0644 9.58532 16.1217 10.2159 15.7682 10.6402L12.4348 14.6402C12.0813 15.0644 11.4507 15.1218 11.0264 14.7682Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14 10C14 10.5523 13.5523 11 13 11L5 11C4.44771 11 4 10.5523 4 10C4 9.44772 4.44771 9 5 9L13 9C13.5523 9 14 9.44772 14 10Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li class="start-trading-item">
+            <div class="img-container mb-3">
+              <img src="./icons/icon-check.svg" alt="icons" height="40" />
+            </div>
+            <div class="start-body">
+              <p class="start-heading mb-2">Verify</p>
+              <p class="start-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate, eveniet?
+              </p>
+            </div>
+          </li>
+          <li class="start-trading-item">
+            <div class="img-containe mb-3">
+              <img src="./icons/icon-fund.svg" alt="icons" height="40" />
+            </div>
+            <div class="start-body">
+              <p class="start-heading mb-2">Fund</p>
+              <p class="start-desc">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </li>
+          <li class="start-trading-item">
+            <div class="img-container mb-3">
+              <img src="./icons/icon-trade.svg" alt="icons" height="40" />
+            </div>
+            <div class="start-body">
+              <p class="start-heading mb-3">Trade</p>
+              <p class="start-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                ipsam totam quam fugit.
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <a href="#" class="base-btn">Register Now</a>
+      </div>
+
+      <svg
+        class="wave"
+        viewBox="0 0 469.539032 263.986786"
+        preserveAspectRatio="none"
+      >
+        <path
+          id="wave"
+          fill="#3377DB"
+          d="M469.539032,263.986786H-0.000001L0,263.557617c66.11113,0.429169,351.088104,0.429169,469.539032,0.208344V263.986786z"
+        />
+      </svg>
+    </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js"></script>
+
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
     <script>
+      const wave = document.querySelector("#wave");
+
+      const shape2 =
+        "M469.539032,263.986786H-0.000001L0,229.890961c310.649475,58.156982,255.61113-98.5,469.539032-65.062302V263.986786z";
+      const shape3 =
+        "M469.539032,263.986786H-0.000001L0,0c226.11113,0,182.887283-0.414484,469.539032,0V263.986786zz";
+
       let tl = gsap.timeline({
-        defaults: { ease: "power4.inOut", duration: 2 },
+        defaults: { ease: "power4.inOut", duration: 1 },
       });
 
-      tl.to(".img", {
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.to("#wave", 0.8, {
+        scrollTrigger: {
+          trigger: "#wave",
+
+          start: "-500px center",
+        },
+        attr: { d: shape2 },
+        ease: Power2.easeIn,
+      });
+
+      gsap.to("#wave", 0.8, {
+        scrollTrigger: {
+          trigger: "#wave",
+
+          start: "-450px center",
+        },
+        attr: { d: shape3 },
+        ease: Power2.easeOut,
+        fill: "#F5F9FF",
+      });
+
+      // tl.to(".img", {
+      //   stagger: 0.4,
+      //   scale: 1,
+      //   "clip-path": "circle(50.5% at 50% 50%)",
+      //   opacity: 1,
+      //   delay: 0.5,
+      //   duration: 1.8,
+      // });
+
+      // SECTION ANIMATION
+
+      tl.to(".phone-left,.phone-right", {
+        // scrollTrigger: {
+        //   trigger: ".phone-left",
+        //   start: "top center",
+        //   toggleActions: "play pause resume none",
+        // },
         stagger: 0.4,
-        scale: 1,
-        "clip-path": "circle(50.5% at 50% 50%)",
+        duration: 1,
+        translateY: 0,
+        "clip-path": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        delay: 0,
+      });
+
+      tl.to(".copy-trading-heading,.copy-trading-desc", {
+        // scrollTrigger: {
+        //   trigger: ".copy-trading-heading",
+        //   start: "top center",
+        //   toggleActions: "play pause resume none",
+        // },
+        stagger: 0.6,
         opacity: 1,
-        delay: 0.5,
-        duration: 1.8,
+        duration: 1.3,
+        y: 0,
+        "clip-path": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+      });
+
+      tl.to(".copy-btn", {
+        // scrollTrigger: {
+        //   trigger: ".copy-trading-heading",
+        //   start: "-100px center",
+        //   markers: true,
+        //   toggleActions: "play pause resume none",
+        // },
+        top: 0,
+        opacity: 1,
+      });
+
+      tl.to(".research-img", {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        delay: 0,
+        "clip-path": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+      });
+
+      tl.to(".research-heading,.research-desc", {
+        stagger: 0.6,
+        opacity: 1,
+        duration: 1.3,
+        y: 0,
+        "clip-path": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+      });
+
+      tl.to(".research-btn", {
+        top: 0,
+        opacity: 1,
       });
     </script>
   </body>
