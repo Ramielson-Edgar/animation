@@ -605,7 +605,7 @@ ul {
           top: -3%;
           left: -2%;
 
-          background-image: url("/arrow-down.svg");
+          background-image: url("../../arrow-down.svg");
           background-size: contain;
           background-position: center;
         }
@@ -675,7 +675,7 @@ ul {
 // START TRADING
 .start-trading {
   position: relative;
-  padding: 70px 0 ;
+  padding: 70px 0;
 
   .start-trading-header {
     .start-trading-heading {
@@ -733,11 +733,33 @@ ul {
   }
 }
 
+@media (max-width: 767.98px) {
+  .wave {
+    height: 80vh;
+  }
+
+  .start-trading {
+    .start-trading-wrapper {
+      .start-trading-list {
+        .start-trading-item {
+          display: flex;
+          gap: 20px;
+        }
+      }
+    }
+  }
+  .copy-trading-section {
+    .split {margin-left: 0;}
+  }
+}
+
 @media (max-width: 576.98px) {
   .advantage-section {
     .advantage-wrapper {
       .advantage__list {
+        grid-template-columns: 1fr;
         .advantage__item {
+          grid-template-columns: 80px 1fr;
           &::before {
             left: 20px;
             width: 40px;
@@ -753,4 +775,51 @@ ul {
       }
     }
   }
+
+  .advantage-section,
+  .start-trading,
+  .copy-trading-section,
+  .research-section {padding: 50px 0;}
+
+  .wrap {max-width: 100%;}
+
+  .copy-trading-section {
+    .phone-left {
+      left: -6px;
+    }
+  
+    .phone-right {
+      right: 20px;
+    }
+  }
+  
+  .research-header,
+  .copy-trading-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center !important;
+      text-align: center;
+  }
+
+  .start-trading {
+    .start-trading-wrapper {
+      .base-btn {
+        margin: 0 auto;
+      }
+    }
+  }
+ 
 }
+
+@media (max-width:320px) {
+  .copy-trading-section {
+    .phone-right {
+      top: -40px;
+      left: -40px;
+      width: 60%;
+    }
+  }
+  
+}
+
