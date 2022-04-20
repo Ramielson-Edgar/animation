@@ -464,20 +464,10 @@ ul {
 
     .copy-trading-heading {
       font-size: 1.875rem;
-
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-      opacity: 0;
-      transform: translateY(60px);
     }
 
     .copy-trading-desc {
       line-height: 1.5;
-
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-      opacity: 0;
-      transform: translateY(60px);
     }
   }
 
@@ -486,20 +476,11 @@ ul {
     top: 50px;
     left: 20px;
 
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-
-    transform: translateY(120px);
     z-index: 1;
   }
 
   .phone-right {
     position: relative;
-
-    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-
-    transform: translateY(-150px);
   }
 }
 
@@ -541,19 +522,6 @@ ul {
   .research-header {
     .research-heading {
       font-size: 1.875rem;
-
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-      opacity: 0;
-      transform: translateY(60px);
-    }
-
-    .research-desc {
-      line-height: 1.5;
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-      opacity: 0;
-      transform: translateY(60px);
     }
   }
 }
@@ -620,9 +588,7 @@ ul {
         background-image: rgba(255, 255, 255, 0.52);
         backdrop-filter: blur(10px);
         border-radius: 10px;
-        transform: translateY(80px);
-        opacity: 0;
-
+        
 
         &::after,
         &::before {
@@ -723,10 +689,7 @@ ul {
     gap: 10px;
   }
 
-  .start-trading-header {
-    opacity: 0;
-    transform: translateY(80px);
-  }
+
 
   .start-trading-wrapper {
     .start-trading-list {
@@ -836,19 +799,13 @@ ul {
       transform: scale(0.5);
       opacity: 0;
     
-      background-image: url("/icons/icon-user.svg");
+      background-image: url("../../icons/icon-user.svg");
       background-repeat: no-repeat;
       background-size: contain;
     
       z-index: 1;
     }
 
-  .support-section-img {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    opacity: 0;
-    transform: translateY(100px);
-  }
 
   .circle {
       position: absolute;

@@ -449,39 +449,21 @@ ul {
 
 .copy-trading-section .copy-trading-header .copy-trading-heading {
   font-size: 1.875rem;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  opacity: 0;
-  -webkit-transform: translateY(60px);
-          transform: translateY(60px);
 }
 
 .copy-trading-section .copy-trading-header .copy-trading-desc {
   line-height: 1.5;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  opacity: 0;
-  -webkit-transform: translateY(60px);
-          transform: translateY(60px);
 }
 
 .copy-trading-section .phone-left {
   position: relative;
   top: 50px;
   left: 20px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  -webkit-transform: translateY(120px);
-          transform: translateY(120px);
   z-index: 1;
 }
 
 .copy-trading-section .phone-right {
   position: relative;
-  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-  -webkit-transform: translateY(-150px);
-          transform: translateY(-150px);
 }
 
 .text-gradient {
@@ -520,20 +502,6 @@ ul {
 
 .research-section .research-header .research-heading {
   font-size: 1.875rem;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  opacity: 0;
-  -webkit-transform: translateY(60px);
-          transform: translateY(60px);
-}
-
-.research-section .research-header .research-desc {
-  line-height: 1.5;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  opacity: 0;
-  -webkit-transform: translateY(60px);
-          transform: translateY(60px);
 }
 
 .advantage-section {
@@ -605,9 +573,6 @@ ul {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   border-radius: 10px;
-  -webkit-transform: translateY(80px);
-          transform: translateY(80px);
-  opacity: 0;
 }
 
 .advantage-section .advantage-wrapper .advantage__list .advantage__item::after, .advantage-section .advantage-wrapper .advantage__list .advantage__item::before {
@@ -734,12 +699,6 @@ ul {
   gap: 10px;
 }
 
-.start-trading .start-trading-header {
-  opacity: 0;
-  -webkit-transform: translateY(80px);
-          transform: translateY(80px);
-}
-
 .start-trading .start-trading-wrapper .start-trading-list {
   display: -ms-grid;
   display: grid;
@@ -841,18 +800,10 @@ ul {
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
   opacity: 0;
-  background-image: url("/icons/icon-user.svg");
+  background-image: url("../../icons/icon-user.svg");
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 1;
-}
-
-.support-section .support-section-img {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  opacity: 0;
-  -webkit-transform: translateY(100px);
-          transform: translateY(100px);
 }
 
 .support-section .circle {

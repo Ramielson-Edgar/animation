@@ -1,0 +1,31 @@
+
+.advantage__item,
+.start-trading-header {
+    opacity: 0;
+    transform: translateY(80px);
+}
+
+
+ 
+.copy-trading-desc,
+.copy-trading-heading,
+.research-heading,
+.research-desc {
+    line-height: 1.5;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    opacity: 0;
+    transform: translateY(60px);
+}
+
+ 
+.support-section-img,
+.phone-right,
+.phone-left {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transform: translateY(120px);
+}
+.phone-right {transform: translateY(-150px);}
+.support-section-img {transform: translateY(100px);}
+ 
