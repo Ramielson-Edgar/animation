@@ -746,53 +746,61 @@ ul {
 .support-section .support-wrapper .support-list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  -ms-grid-columns: (280px)[2];
+      grid-template-columns: repeat(2, 280px);
   gap: 10px;
 }
 
-.support-section .support-wrapper .support-list .support-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.support-section .support-wrapper .support-list .support-item .link-wrap {
+  display: -ms-grid;
+  display: grid;
   -ms-grid-columns: 60px 1fr;
       grid-template-columns: 60px 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
-  padding: 10px;
+  height: 80px;
+  color: #242020;
+  padding: 10px 20px;
+  -webkit-box-shadow: 7px 23px 30px -10px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 23px 30px -10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 6px;
+  background-image: url("/icons/arrow-right.svg");
+  background-position: 240px 30px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
-.support-section .support-wrapper .support-list .support-item p {
+.support-section .support-wrapper .support-list .support-item .link-wrap:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.support-section .support-wrapper .support-list .support-item .link-wrap p {
   font-size: 1rem;
 }
 
 .support-section .icon-user-plus {
   position: relative;
-  -webkit-filter: drop-shadow(42px 48px 90px rgba(143, 143, 143, 0.6));
-          filter: drop-shadow(42px 48px 90px rgba(143, 143, 143, 0.6));
-}
-
-.support-section .icon-user-plus::before {
-  position: absolute;
-  display: block;
-  content: "";
-  top: -30px;
-  left: -25px;
-  width: 277px;
-  height: 578px;
-  border: 1px solid #a6a6a6;
-  border-radius: 1000px;
-  z-index: -1;
+  -webkit-filter: drop-shadow(42px 48px 90px rgba(143, 143, 143, 0.35));
+          filter: drop-shadow(42px 48px 90px rgba(143, 143, 143, 0.35));
 }
 
 .support-section .icon-user-plus::after {
   position: absolute;
   display: block;
   content: "";
-  top: 0;
-  left: 170px;
+  top: -20px;
+  right: -20px;
   width: 80px;
   height: 80px;
   border: transparent;

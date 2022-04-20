@@ -588,7 +588,7 @@ ul {
         background-image: rgba(255, 255, 255, 0.52);
         backdrop-filter: blur(10px);
         border-radius: 10px;
-        
+
 
         &::after,
         &::before {
@@ -639,6 +639,7 @@ ul {
 
 // BLOB
 @keyframes transform {
+
   0%,
   100% {
     border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
@@ -670,6 +671,7 @@ ul {
 }
 
 @keyframes movement {
+
   0%,
   100% {
     transform: none;
@@ -716,6 +718,7 @@ ul {
         .start-body {
           .link-register {
             font-weight: 800;
+
             &:focus,
             &:hover {
               color: #0d6efd;
@@ -730,7 +733,7 @@ ul {
 // SUPPORT SECTION
 .support-section {
   position: relative;
-  padding: 70px 0 ;
+  padding: 70px 0;
 
   .support-header {
     .support-desc {
@@ -742,79 +745,83 @@ ul {
   .support-wrapper {
     .support-list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(2, 280px);
       gap: 10px;
-
+ 
       .support-item {
-        display: flex;
-        grid-template-columns: 60px 1fr;
-        align-items: center;
-        gap: 10px;
-        padding: 10px;
 
-        p {
-          font-size: 1rem;
+        .link-wrap {
+                  display: grid;
+                  grid-template-columns: 60px 1fr;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 10px;
+                  
+                  height: 80px;
+                  color: #242020;
+                  padding: 10px 20px;
+                  box-shadow: 7px 23px 30px -10px rgba(0, 0, 0, 0.1);
+                  background-color: #fff;
+                  border-radius: 6px;
+                  
+                  background-image: url('/icons/arrow-right.svg');
+                  background-position: 240px 30px;
+                  background-repeat: no-repeat;
+                  background-size: auto;
+
+                  transform: translateY(0);
+                  transition: all .3s ease-in;
+                  &:hover {
+                    transform: translateY(-5px);
+                  }
+              p {
+                font-size: 1rem;
+              }
+
         }
+    
       }
+
     }
   }
 
   .icon-user-plus {
     position: relative;
-
-    filter: drop-shadow(42px 48px 90px rgba(143, 143, 143, 0.6));
-
-    &::before {
-      position: absolute;
-      display: block;
-
-      content: "";
-      top: -30px;
-      left: -25px;
-
-      width: 277px;
-      height: 578px;
-
-      border: 1px solid #a6a6a6;
-      border-radius: 1000px;
-
-      z-index: -1;
-    }
-
+    filter: drop-shadow(42px 48px 90px rgba(143, 143, 143, 0.35));
   }
 
   .icon-user-plus::after {
-      position: absolute;
-      display: block;
-      content: "";
-    
-      top: 0;
-      left: 170px;
-    
-      width: 80px;
-      height: 80px;
-    
-      border: transparent;
-      border-radius: 0;
-      transform: scale(0.5);
-      opacity: 0;
-    
-      background-image: url("../../icons/icon-user.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-    
-      z-index: 1;
-    }
+    position: absolute;
+    display: block;
+    content: "";
+
+    top: -20px;
+    right: -20px;
+
+    width: 80px;
+    height: 80px;
+
+    border: transparent;
+    border-radius: 0;
+    transform: scale(0.5);
+    opacity: 0;
+
+    background-image: url("../../icons/icon-user.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    z-index: 1;
+  }
 
 
   .circle {
-      position: absolute;
-      top: -30%;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      
-      z-index:  -1;
+    position: absolute;
+    top: -30%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
   }
 }
 
@@ -852,6 +859,7 @@ ul {
       }
     }
   }
+
   .copy-trading-section {
     .split {
       margin-left: 0;
@@ -864,13 +872,16 @@ ul {
     .advantage-wrapper {
       .advantage__list {
         grid-template-columns: 1fr;
+
         .advantage__item {
           grid-template-columns: 80px 1fr;
+
           &::before {
             left: 20px;
             width: 40px;
             height: 40px;
           }
+
           &::after {
             top: -10px;
             left: 30px;
