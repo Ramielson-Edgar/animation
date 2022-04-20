@@ -57,6 +57,11 @@ a {
   text-decoration: none;
 }
 
+.link {
+  display: inline;
+  text-decoration: underline;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -65,6 +70,11 @@ ul {
 
 .bg {
   background-color: #fff;
+}
+
+.text-bold {
+  font-family: "Roboto";
+  font-weight: 900;
 }
 
 .main-nav {
@@ -333,8 +343,6 @@ ul {
   display: flex;
 }
 
-.base-btn:hover,
-.base-btn:focus,
 .base-btn {
   display: block;
   width: 200px;
@@ -354,18 +362,51 @@ ul {
   transition: all 0.3s ease-in;
 }
 
-.base-btn:hover:focus, .base-btn:hover:hover,
-.base-btn:focus:focus,
-.base-btn:focus:hover,
-.base-btn:focus,
-.base-btn:hover {
+.base-btn:focus, .base-btn:hover {
+  color: #fff;
   -webkit-animation: bg-gradient 5s infinite alternate;
           animation: bg-gradient 5s infinite alternate;
-}
-
-.base-btn:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
+}
+
+.blue-gradient {
+  background-image: linear-gradient(271.9deg, #ffa4a4 -16.79%, rgba(87, 94, 255, 0.59) 133.23%);
+}
+
+.blue-gradient:hover {
+  color: #fff;
+  -webkit-animation: bg-gradient 5s infinite alternate blue-gradient 0.3s infinite alternate;
+          animation: bg-gradient 5s infinite alternate blue-gradient 0.3s infinite alternate;
+}
+
+.ghost-btn {
+  color: #0d6efd;
+  border: 2px solid #0d6efd;
+  background: transparent;
+}
+
+.ghost-btn:hover {
+  color: #fff;
+  background-color: #0d6efd;
+}
+
+@-webkit-keyframes blue-gradient {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes blue-gradient {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 
 @-webkit-keyframes bg-gradient {
@@ -407,9 +448,7 @@ ul {
 }
 
 .copy-trading-section .copy-trading-header .copy-trading-heading {
-  font-family: "Roboto";
   font-size: 1.875rem;
-  font-weight: 600;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   opacity: 0;
@@ -480,9 +519,7 @@ ul {
 }
 
 .research-section .research-header .research-heading {
-  font-family: "Roboto";
   font-size: 1.875rem;
-  font-weight: 600;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   opacity: 0;
@@ -540,12 +577,6 @@ ul {
   z-index: -1;
 }
 
-.advantage-section .advantage-header {
-  font-family: "Roboto";
-  font-weight: 900;
-  text-align: center;
-}
-
 .advantage-section .advantage-wrapper .advantage__list {
   display: -ms-grid;
   display: grid;
@@ -574,6 +605,9 @@ ul {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   border-radius: 10px;
+  -webkit-transform: translateY(80px);
+          transform: translateY(80px);
+  opacity: 0;
 }
 
 .advantage-section .advantage-wrapper .advantage__list .advantage__item::after, .advantage-section .advantage-wrapper .advantage__list .advantage__item::before {
@@ -696,10 +730,14 @@ ul {
   padding: 70px 0;
 }
 
-.start-trading .start-trading-header .start-trading-heading {
-  font-family: "Roboto";
-  font-weight: 900;
-  text-align: center;
+.start-trading .start-btn-wrapper {
+  gap: 10px;
+}
+
+.start-trading .start-trading-header {
+  opacity: 0;
+  -webkit-transform: translateY(80px);
+          transform: translateY(80px);
 }
 
 .start-trading .start-trading-wrapper .start-trading-list {
@@ -717,6 +755,9 @@ ul {
   background-color: #f4f6f9;
   -webkit-box-shadow: 40px 40px 50px -10px rgba(170, 160, 160, 0.1);
           box-shadow: 40px 40px 50px -10px rgba(170, 160, 160, 0.1);
+  -webkit-transform: translateY(80px);
+          transform: translateY(80px);
+  opacity: 0;
 }
 
 .start-trading .start-trading-wrapper .start-trading-list .start-trading-item .start-heading {
@@ -727,6 +768,100 @@ ul {
 
 .start-trading .start-trading-wrapper .start-trading-list .start-trading-item .start-body .link-register {
   font-weight: 800;
+}
+
+.start-trading .start-trading-wrapper .start-trading-list .start-trading-item .start-body .link-register:focus, .start-trading .start-trading-wrapper .start-trading-list .start-trading-item .start-body .link-register:hover {
+  color: #0d6efd;
+}
+
+.support-section {
+  position: relative;
+  padding: 70px 0;
+}
+
+.support-section .support-header .support-desc {
+  font-size: 1.25rem;
+  color: #817e7e;
+}
+
+.support-section .support-wrapper .support-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 10px;
+}
+
+.support-section .support-wrapper .support-list .support-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-columns: 60px 1fr;
+      grid-template-columns: 60px 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.support-section .support-wrapper .support-list .support-item p {
+  font-size: 1rem;
+}
+
+.support-section .icon-user-plus {
+  position: relative;
+  -webkit-filter: drop-shadow(42px 48px 90px rgba(143, 143, 143, 0.6));
+          filter: drop-shadow(42px 48px 90px rgba(143, 143, 143, 0.6));
+}
+
+.support-section .icon-user-plus::before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: -30px;
+  left: -25px;
+  width: 277px;
+  height: 578px;
+  border: 1px solid #a6a6a6;
+  border-radius: 1000px;
+  z-index: -1;
+}
+
+.support-section .icon-user-plus::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 170px;
+  width: 80px;
+  height: 80px;
+  border: transparent;
+  border-radius: 0;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  opacity: 0;
+  background-image: url("/icons/icon-user.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+}
+
+.support-section .support-section-img {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+
+.support-section .circle {
+  position: absolute;
+  top: -30%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 @media (max-width: 991.98px) {
