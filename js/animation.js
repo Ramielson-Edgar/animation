@@ -1,8 +1,4 @@
 const wave = document.querySelector("#wave");
-const circle = document.querySelector("#circle");
-
-const circlePath1 =
-  "M1920.64 0.190063H0.263916V326.151C0.263916 326.151 332.214 877.926 969.032 516.176C1605.85 154.426 1920.64 516.176 1920.64 516.176V0.190063Z";
 
 const shape2 =
   "M469.539032,263.986786H-0.000001L0,229.890961c310.649475,58.156982,255.61113-98.5,469.539032-65.062302V263.986786z";
@@ -35,33 +31,6 @@ gsap.to("#wave", 0.8, {
   fill: "#F5F9FF",
 });
 
-gsap.to(circle, 0.8, {
-  scrollTrigger: {
-    trigger: "#circle",
-    start: "top center",
-  },
-  attr: { d: circlePath1 },
-  ease: Power2.easeOut,
-  fill: "#F5F9FF",
-});
-
-// ANIMATION MARKET INSTRUMENTS
-
-// gsap.to(".img", {
-//   scrollTrigger: {
-//     trigger: ".mg",
-//     start: "150px center",
-//     toggleActions: "play pause resume none",
-//   },
-//   stagger: 0.4,
-//   scale: 1,
-//   "clip-path": "circle(50.5% at 50% 50%)",
-//   opacity: 1,
-//   delay: 0.5,
-//   duration: 1.8,
-// });
-
-// SECTION ANIMATION
 gsap.to(".phone-left,.phone-right", {
   scrollTrigger: {
     trigger: ".phone-left",
@@ -76,9 +45,9 @@ gsap.to(".phone-left,.phone-right", {
   delay: 0,
 });
 
-gsap.to(".copy-trading-heading,.copy-trading-desc", {
+gsap.to(".copy__trading-heading, .copy__trading-desc", {
   scrollTrigger: {
-    trigger: ".copy-trading-heading",
+    trigger: ".copy__trading-heading",
     start: "-90px center",
     toggleActions: "play pause resume none",
   },
@@ -91,7 +60,7 @@ gsap.to(".copy-trading-heading,.copy-trading-desc", {
 
 gsap.to(".copy-btn", {
   scrollTrigger: {
-    trigger: ".copy-trading-heading",
+    trigger: ".copy__trading-heading",
     start: "-100px center",
     toggleActions: "play pause resume none",
   },
@@ -113,9 +82,9 @@ gsap.to(".research-img", {
   "clip-path": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
 });
 
-gsap.to(".research-heading,.research-desc", {
+gsap.to(".research__section-heading,.research__section-desc", {
   scrollTrigger: {
-    trigger: ".research-heading",
+    trigger: ".research__section-heading",
     start: "-50px center",
     toggleActions: "play pause resume none",
   },
@@ -150,10 +119,10 @@ gsap.to(".support-section-img ", {
   "clip-path": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
 });
 
-gsap.to(CSSRulePlugin.getRule(".support-section .icon-user-plus::after"), {
+gsap.to(CSSRulePlugin.getRule(".support__section .icon-user-plus::after"), {
   scrollTrigger: {
     trigger: ".icon-user-plus",
-    start: "120px center",
+    start: "-50px center",
     toggleActions: "play pause resume none",
   },
 
@@ -189,9 +158,9 @@ gsap.to(".advantage__item", {
   opacity: 1,
 });
 
-gsap.to(".start-trading-item", {
+gsap.to(".start__trading-item", {
   scrollTrigger: {
-    trigger: ".start-trading-item",
+    trigger: ".start__trading-item",
     start: "top center",
     toggleActions: "play pause resume none",
   },
@@ -201,9 +170,9 @@ gsap.to(".start-trading-item", {
   opacity: 1,
 });
 
-gsap.to(".start-trading-header", {
+gsap.to(".start__trading-header", {
   scrollTrigger: {
-    trigger: ".start-trading-header",
+    trigger: ".start__trading-header",
     start: "-80px center",
     toggleActions: "play pause resume none",
   },
@@ -211,4 +180,26 @@ gsap.to(".start-trading-header", {
   duration: 1,
   y: 0,
   opacity: 1,
+});
+
+gsap.to(".advantage__section-header", {
+  scrollTrigger: {
+    trigger: ".advantage__section-header",
+    start: "-50px center",
+    toggleActions: "play pause resume none",
+  },
+
+  duration: 1,
+  y: 0,
+  opacity: 1,
+  "clip-path": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+});
+
+tl.to(".img", {
+  stagger: 0.4,
+  scale: 1,
+  "clip-path": "circle(50.5% at 50% 50%)",
+  opacity: 1,
+  delay: 0.5,
+  duration: 1.8,
 });

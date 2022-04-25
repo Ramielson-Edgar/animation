@@ -1,16 +1,16 @@
 
 .advantage__item,
-.start-trading-header {
+.start__trading-header {
     opacity: 0;
     transform: translateY(80px);
 }
 
 
- 
-.copy-trading-desc,
-.copy-trading-heading,
-.research-heading,
-.research-desc {
+.advantage__section-header,
+.copy__trading-desc,
+.copy__trading-heading,
+.research__section-heading,
+.research__section-desc{
     line-height: 1.5;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
