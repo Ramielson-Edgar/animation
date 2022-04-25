@@ -195,6 +195,33 @@ gsap.to(".advantage__section-header", {
   "clip-path": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
 });
 
+gsap.to(
+  ".top__markets-heading, .top__markets-sub-description, .top__markets-description",
+  {
+    scrollTrigger: {
+      trigger: ".top__markets-heading",
+      start: "top center",
+      toggleActions: "play pause resume none",
+    },
+    stagger: 0.6,
+    duration: 1,
+    y: 0,
+    opacity: 1,
+    "clip-path": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+  }
+);
+
+gsap.to(".ghost-btn", {
+  scrollTrigger: {
+    trigger: ".top__markets-sub-description .ghost-btn",
+    start: "top center",
+    toggleActions: "play pause resume none",
+  },
+  top: 0,
+  opacity: 1,
+  duration: 1.5,
+});
+
 tl.to(".img", {
   stagger: 0.4,
   scale: 1,

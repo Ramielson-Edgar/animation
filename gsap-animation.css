@@ -5,7 +5,9 @@
     transform: translateY(80px);
 }
 
-
+.top__markets-sub-description,
+.top__markets-heading,
+.top__markets-description,
 .advantage__section-header,
 .copy__trading-desc,
 .copy__trading-heading,
@@ -18,6 +20,7 @@
     transform: translateY(60px);
 }
 
+
  
 .support-section-img,
 .phone-right,
@@ -29,3 +32,9 @@
 .phone-right {transform: translateY(-150px);}
 .support-section-img {transform: translateY(100px);}
  
+
+.ghost-btn {
+    position: relative;
+    top: 100px;
+    opacity:0;
+}
