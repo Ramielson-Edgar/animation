@@ -72,7 +72,7 @@ gsap.to(".copy-btn", {
 gsap.to(".research-img", {
   scrollTrigger: {
     trigger: ".research-img",
-    start: "-100px center",
+    start: "-90px center",
     toggleActions: "play pause resume none",
   },
   opacity: 1,
