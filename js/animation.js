@@ -326,7 +326,6 @@ gsap.to(CSSRulePlugin.getRule(".support__section .icon-user-plus::after"), {
   scrollTrigger: {
     trigger: ".icon-user-plus",
     start: "100px center",
-    markers: true,
     toggleActions: "play pause resume none",
   },
   duration: 0.8,
