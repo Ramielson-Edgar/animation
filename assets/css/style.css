@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 :root {
-  --body-font-family: 'lato';
-  --header-font-family: 'Roboto';
+  --header-font-family: 'Roboto',sans-serif;
   --font-size-35: 2.188rem;
   --font-size-30: 1.875rem;
   --font-size-24: 1.5rem;
@@ -45,7 +43,7 @@ html {
 
 body {
   font-size: var(--font-size-16);
-  font-family: var(--body-font-family);
+  font-family: var(--header-font-family);
   font-weight: var(--font-weight-400);
   line-height: var(--base-line-height);
   color: var(--dark-text);
@@ -586,7 +584,7 @@ ul {
   left: 40%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  content: '';
+  content: "";
   min-height: 300px;
   min-width: 300px;
   width: 20%;
@@ -646,7 +644,7 @@ ul {
 .advantage__section .advantage-wrapper .advantage__list .advantage__item::after, .advantage__section .advantage-wrapper .advantage__list .advantage__item::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   top: -20px;
   left: -20px;
   width: 48px;
@@ -784,7 +782,7 @@ ul {
 }
 
 .start__trading .start__trading-wrapper .start__trading-list .start__trading-item .start-heading {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 600;
   font-size: 20px;
 }
@@ -869,7 +867,7 @@ ul {
 .support__section .icon-user-plus::after {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   top: -20px;
   right: -20px;
   width: 80px;
@@ -897,7 +895,7 @@ ul {
   position: absolute;
   overflow: hidden;
   display: block;
-  content: '';
+  content: "";
   top: -40%;
   left: 70%;
   max-width: 239px;
@@ -943,7 +941,7 @@ ul {
 .blob::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   width: 119px;
   height: 119px;
   border-radius: 50%;
@@ -1014,7 +1012,7 @@ ul {
 .platforms__section .platforms__section-card .section__card-glass::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   top: 50px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1123,7 +1121,7 @@ ul {
 .icon-fiat::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   top: 16%;
   left: 55%;
   -webkit-transform: translate(-50%, -50%);

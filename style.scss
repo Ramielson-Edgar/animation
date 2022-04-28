@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 :root {
   //FONT FAMILY
-  --body-font-family: 'lato';
-  --header-font-family: 'Roboto';
+  --header-font-family: 'Roboto',sans-serif;
 
   //FONT SIZE
   --font-size-35: 2.188rem;
@@ -62,7 +60,7 @@ html {
 
 body {
   font-size: var(--font-size-16);
-  font-family: var(--body-font-family);
+  font-family: var(--header-font-family);
   font-weight: var(--font-weight-400);
   line-height: var(--base-line-height);
   color: var(--dark-text);
@@ -170,7 +168,6 @@ ul {
   background-repeat: no-repeat;
 }
 
-
 @keyframes scale {
   0% {
     transform: scale(1) translateY(5px);
@@ -204,7 +201,7 @@ ul {
   width: 120px;
   height: 120px;
 
-  background-image: url('../../icons/icon-tesla.svg');
+  background-image: url("../../icons/icon-tesla.svg");
   animation-delay: 14s;
   z-index: 2;
 }
@@ -214,7 +211,7 @@ ul {
   left: 249px;
   width: 60px;
   height: 60px;
-  background-image: url('../../icons/icon-apple.svg');
+  background-image: url("../../icons/icon-apple.svg");
   animation-delay: 8s;
 }
 
@@ -225,7 +222,7 @@ ul {
   width: 100px;
   height: 100px;
 
-  background-image: url('../../icons/icon-btc.svg');
+  background-image: url("../../icons/icon-btc.svg");
   animation-delay: 16s;
 }
 
@@ -236,7 +233,7 @@ ul {
   width: 60px;
   height: 60px;
 
-  background-image: url('../../icons/icon-er-us.svg');
+  background-image: url("../../icons/icon-er-us.svg");
   animation-delay: 18s;
 }
 
@@ -247,7 +244,7 @@ ul {
   width: 80px;
   height: 80px;
 
-  background-image: url('../../icons/icon-us-zar.svg');
+  background-image: url("../../icons/icon-us-zar.svg");
   animation-delay: 4s;
 }
 
@@ -258,7 +255,7 @@ ul {
   width: 90px;
   height: 60px;
 
-  background-image: url('../../icons/icon-eth.svg');
+  background-image: url("../../icons/icon-eth.svg");
   animation-delay: 10s;
 }
 
@@ -269,7 +266,7 @@ ul {
   width: 100px;
   height: 100px;
 
-  background-image: url('../../icons/icon-gold.svg');
+  background-image: url("../../icons/icon-gold.svg");
   animation-delay: 6s;
   z-index: 1;
 }
@@ -281,7 +278,7 @@ ul {
   width: 60px;
   height: 60px;
 
-  background-image: url('../../icons/icon-litecoin.svg');
+  background-image: url("../../icons/icon-litecoin.svg");
   animation-delay: 2s;
   z-index: 1;
 }
@@ -293,7 +290,7 @@ ul {
   width: 120px;
   height: 90px;
 
-  background-image: url('../../icons/icon-nasdaq.svg');
+  background-image: url("../../icons/icon-nasdaq.svg");
   animation-delay: 0s;
   z-index: 1;
 }
@@ -305,7 +302,7 @@ ul {
   width: 70px;
   height: 70px;
 
-  background-image: url('../../icons/icon-ripple.svg');
+  background-image: url("../../icons/icon-ripple.svg");
   animation-delay: 14s;
 }
 
@@ -316,7 +313,7 @@ ul {
   width: 70px;
   height: 70px;
 
-  background-image: url('../../icons/icon-twitter.svg');
+  background-image: url("../../icons/icon-twitter.svg");
   animation-delay: 5s;
 }
 
@@ -327,7 +324,7 @@ ul {
   width: 150px;
   height: 150px;
 
-  background-image: url('../../icons/icon-us-dkk.svg');
+  background-image: url("../../icons/icon-us-dkk.svg");
   animation-delay: 14s;
   z-index: 2;
 }
@@ -339,7 +336,7 @@ ul {
   width: 90px;
   height: 90px;
 
-  background-image: url('../../icons/icon-us-sek.svg');
+  background-image: url("../../icons/icon-us-sek.svg");
   animation-delay: 16s;
 
   z-index: 1;
@@ -352,7 +349,7 @@ ul {
   width: 120px;
   height: 120px;
 
-  background-image: url('../../icons/icon-us-cn.svg');
+  background-image: url("../../icons/icon-us-cn.svg");
   animation-delay: 12s;
 }
 
@@ -508,7 +505,7 @@ ul {
       top: 120px;
       left: -250px;
 
-      background-image: url('../../images/trade-gold.png');
+      background-image: url("../../images/trade-gold.png");
       z-index: 10;
     }
 
@@ -516,7 +513,7 @@ ul {
       top: 250px;
       left: -440px;
 
-      background-image: url('../../images/trade-nasdaq.png');
+      background-image: url("../../images/trade-nasdaq.png");
       z-index: 10;
     }
 
@@ -524,7 +521,7 @@ ul {
       left: -460px;
       top: 20px;
 
-      background-image: url('../../images/trade-apple.png');
+      background-image: url("../../images/trade-apple.png");
       z-index: 10;
     }
 
@@ -532,7 +529,7 @@ ul {
       top: -180px;
       left: -470px;
 
-      background-image: url('../../images/trade-eth.png');
+      background-image: url("../../images/trade-eth.png");
       z-index: 10;
     }
 
@@ -540,7 +537,7 @@ ul {
       top: -270px;
       left: -180px;
 
-      background-image: url('../../images/trade-btc.png');
+      background-image: url("../../images/trade-btc.png");
       z-index: 10;
     }
 
@@ -552,7 +549,7 @@ ul {
 
       color: var(--white-bg-color);
       background-color: rgba(255, 255, 255, 0.6);
-    
+
       padding: 10px;
       border-radius: 12px;
 
@@ -597,7 +594,7 @@ ul {
     left: 40%;
     transform: translate(-50%, -50%);
 
-    content: '';
+    content: "";
 
     min-height: 300px;
     min-width: 300px;
@@ -650,7 +647,7 @@ ul {
         &::before {
           position: absolute;
           display: block;
-          content: '';
+          content: "";
 
           top: -20px;
           left: -20px;
@@ -669,7 +666,7 @@ ul {
           top: -3%;
           left: -2%;
 
-          background-image: url('../../icons/arrow-down.svg');
+          background-image: url("../../icons/arrow-down.svg");
           background-size: contain;
           background-position: center;
         }
@@ -695,7 +692,6 @@ ul {
 
 // BLOB
 @keyframes transform {
-
   0%,
   100% {
     border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
@@ -727,7 +723,6 @@ ul {
 }
 
 @keyframes movement {
-
   0%,
   100% {
     transform: none;
@@ -760,7 +755,7 @@ ul {
         box-shadow: 40px 40px 50px -10px rgba(170, 160, 160, 0.1);
 
         .start-heading {
-          font-family: 'Roboto';
+          font-family: "Roboto";
           font-weight: 600;
           font-size: 20px;
         }
@@ -821,7 +816,7 @@ ul {
           transform: translateY(0);
           transition: all 0.3s ease-in;
 
-          background-image: url('../../icons/arrow-right.svg');
+          background-image: url("../../icons/arrow-right.svg");
           background-position: 97%;
           background-repeat: no-repeat;
           background-size: auto;
@@ -847,7 +842,7 @@ ul {
   .icon-user-plus::after {
     position: absolute;
     display: block;
-    content: '';
+    content: "";
 
     top: -20px;
     right: -20px;
@@ -860,7 +855,7 @@ ul {
     transform: scale(0.5);
     opacity: 0;
 
-    background-image: url('../../icons/icon-user.svg');
+    background-image: url("../../icons/icon-user.svg");
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -880,18 +875,18 @@ ul {
     position: absolute;
     overflow: hidden;
     display: block;
-    content: '';
+    content: "";
 
     top: -40%;
     left: 70%;
 
     max-width: 239px;
     max-height: 485px;
-    
+
     width: 239px;
     height: 485px;
 
-    background-image: url('../../images/top-markets-img.png');
+    background-image: url("../../images/top-markets-img.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -928,7 +923,7 @@ ul {
 .blob::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
 
   width: 119px;
   height: 119px;
@@ -998,7 +993,7 @@ ul {
         position: absolute;
         display: block;
 
-        content: '';
+        content: "";
 
         top: 50px;
         left: 50%;
@@ -1087,8 +1082,6 @@ ul {
   background: linear-gradient(277.27deg, #ace6dd 0%, #6cd5c5 100%);
 }
 
-
-
 // ICON
 .icon-standard::after,
 .icon-standard::before,
@@ -1100,7 +1093,7 @@ ul {
 .icon-fiat::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
 
   top: 16%;
   left: 55%;
@@ -1128,7 +1121,7 @@ ul {
 }
 
 .icon-fiat::before {
-  background-image: url('../../icons-slider/icon-fiat.png');
+  background-image: url("../../icons-slider/icon-fiat.png");
   z-index: 3;
   left: 40%;
 }
@@ -1138,40 +1131,37 @@ ul {
 }
 
 .icon-crypto::before {
-  background-image: url('../../icons-slider/icon-crypto.png');
+  background-image: url("../../icons-slider/icon-crypto.png");
 }
 
 .icon-cent::before {
-  background-image: url('../../icons-slider/icon-cent.png');
+  background-image: url("../../icons-slider/icon-cent.png");
 }
 
 .icon-standard::before {
   left: 62%;
-  background-image: url('../../icons-slider/knife.png');
+  background-image: url("../../icons-slider/knife.png");
 }
 
 .icon-premium::before {
   left: 60%;
-  background-image: url('../../icons-slider/crown.png');
+  background-image: url("../../icons-slider/crown.png");
 }
 
 .icon-micro::before {
-  background-image: url('../../icons-slider/coin.png');
+  background-image: url("../../icons-slider/coin.png");
 }
 
 .icon-pro::before {
-  background-image: url('../../icons-slider/helm.png');
+  background-image: url("../../icons-slider/helm.png");
 }
 
-
 .account__types-section {
-
   .account__wrapper {
     padding: 70px 0;
     margin-bottom: 70px;
 
     .account__wrapper-info {
-
       h2 {
         font-size: var(--font-size-24);
         margin-bottom: 50px;
@@ -1314,8 +1304,6 @@ ul {
           }
         }
       }
-
-
     }
   }
 
@@ -1385,7 +1373,6 @@ ul {
   }
 
   .top-markets__section {
-
     &::before {
       max-width: 100%;
       max-height: 100%;
@@ -1397,7 +1384,7 @@ ul {
       width: 537px;
       height: 237px;
 
-      background-image: url('../../images/top-markets-img-vertical.png');
+      background-image: url("../../images/top-markets-img-vertical.png");
       background-size: contain;
     }
 
@@ -1414,7 +1401,6 @@ ul {
 @media (max-width: 767.98px) {
   .start__trading {
     .start__trading-wrapper {
-
       .start-btn-wrapper {
         justify-content: center;
         align-items: center;
@@ -1515,7 +1501,6 @@ ul {
 
   .owl-theme {
     .owl-nav {
-
       .bi-arrow-right-short {
         right: 0;
       }
@@ -1534,7 +1519,6 @@ ul {
       transform: translate(-50%, -50%);
 
       display: flex;
-
     }
   }
 
@@ -1549,13 +1533,12 @@ ul {
   .markets__wrapper-img {
     display: none;
   }
-
 }
 
 @media (max-width: 576.98px) {
-
-  .section-padding {padding: 50px 0 ;}
-
+  .section-padding {
+    padding: 50px 0;
+  }
 
   .advantage__section {
     &::before {
@@ -1621,7 +1604,6 @@ ul {
     .split {
       justify-content: center;
     }
-
   }
 
   //START TRADING SECTION
@@ -1649,7 +1631,6 @@ ul {
 
   //TOP MARKETS
   .top-markets__section {
-
     .top__markets-header {
       text-align: center;
       justify-content: center;
@@ -1736,7 +1717,6 @@ ul {
         height: 60px;
       }
 
-
       .icon-btc {
         left: 0;
 
@@ -1759,7 +1739,6 @@ ul {
         width: 50px;
         height: 50px;
       }
-
 
       .icon-ripple {
         top: 360px;
@@ -1842,9 +1821,7 @@ ul {
       }
     }
   }
-
 }
-
 
 @supports (backdrop-filter: blur(1rem)) {
   .account__table {
