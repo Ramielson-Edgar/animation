@@ -1,0 +1,85 @@
+.support-item,
+.markets__wrapper-item,
+.start__trading-item,
+.advantage__item {
+    opacity: 0;
+    transform: translateY(80px);
+}
+
+.start__trading-header,
+.support-header,
+.support__section-heading,
+.support__section-description,
+.research-header,
+.research-desc,
+.account__types-section,
+.copy-desc,
+.copy-header,
+.markets-header,
+.mt4-platform-img,
+.mt4-glass-card,
+.header-mt4,
+.header-mt4-desc,
+.meta-trader-logo,
+.platform-section-header,
+.allpips-logo,
+.header-pips,
+.header-description,
+.top__markets-sub-description,
+.top__markets-heading,
+.top__markets-description,
+.advantage__section-header,
+.copy__trading-desc,
+.copy__trading-heading,
+.research__section-heading,
+.research__section-desc {
+    line-height: 1.5;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    opacity: 0;
+    transform: translateY(60px);
+}
+
+
+.pips-devices,
+.pips-glass-card,
+.support-section-img,
+.phone-right,
+.phone-left {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transform: translateY(120px);
+}
+
+.phone-right {
+    transform: translateY(-150px);
+}
+
+.research-img {
+    transform: translateY(60px);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    opacity: 0;
+} 
+
+ 
+.copy-btn,
+.top-market-btn,
+.purple-btn,
+.platform-mt4-btn,
+.research-btn,
+.copy-btn {
+    position: relative;
+    top: 60px;
+    opacity: 0;
+} 
+
+
+ .img {
+    transform: scale(0);
+    -webkit-clip-path: circle(0.5% at 50% 50%);
+    clip-path: circle(0.0% at 50% 50%);
+    transform: translateY(0px);
+    opacity: 0;
+}
+
