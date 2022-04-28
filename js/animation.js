@@ -128,20 +128,6 @@ gsap.to(".mt4-platform-img, .mt4-glass-card", {
   "clip-path": "polygon(0% 0%, 200% 0%, 200% 200%, 0% 200%)",
 });
 
-gsap.to(CSSRulePlugin.getRule(".top-markets__section::before"), {
-  scrollTrigger: {
-    trigger: ".top-markets__section",
-    start: "top center",
-    toggleActions: "play pause resume none",
-  },
-  duration: 0.8,
-  delay: 0.6,
-  cssRule: {
-    opacity: 1,
-    translateX: 0,
-  },
-});
-
 gsap.to(
   ".markets-header, .top__markets-heading, .top__markets-sub-description, .top__markets-description",
   {
@@ -199,7 +185,7 @@ gsap.to(".copy-header, .copy-desc", {
 gsap.to(".copy-btn", {
   scrollTrigger: {
     trigger: ".copy-btn",
-    start: "-50px center",
+    start: "top center",
     toggleActions: "play pause resume none",
   },
   top: 0,
@@ -214,11 +200,10 @@ gsap.to(".phone-left, .phone-right", {
     toggleActions: "play pause resume none",
   },
 
-  stagger: 0.4,
-  duration: 1.5,
+  stagger: 0.6,
+  duration: 2,
   translateY: 0,
   "clip-path": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-  delay: 0,
 });
 
 gsap.to(".markets__wrapper-item", {
@@ -268,18 +253,6 @@ gsap.to(".research-btn", {
   top: 0,
   opacity: 1,
   duration: 1.5,
-});
-
-gsap.to(".account__types-section", {
-  scrollTrigger: {
-    trigger: ".account__types-section",
-    start: "top center",
-    toggleActions: "play pause resume none",
-  },
-  duration: 1.2,
-  opacity: 1,
-  y: 0,
-  "clip-path": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
 });
 
 gsap.to(

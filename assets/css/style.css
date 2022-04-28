@@ -526,21 +526,21 @@ ul {
 .copy__trading-section .markets__wrapper-img .trade-apple {
   left: -460px;
   top: 20px;
-  background-image: url("/images/trade-apple.png");
+  background-image: url("../../images/trade-apple.png");
   z-index: 10;
 }
 
 .copy__trading-section .markets__wrapper-img .trade-eth {
   top: -180px;
   left: -470px;
-  background-image: url("/images/trade-eth.png");
+  background-image: url("../../images/trade-eth.png");
   z-index: 10;
 }
 
 .copy__trading-section .markets__wrapper-img .trade-btc {
   top: -270px;
   left: -180px;
-  background-image: url("/images/trade-btc.png");
+  background-image: url("../../images/trade-btc.png");
   z-index: 10;
 }
 
@@ -904,9 +904,6 @@ ul {
   max-height: 485px;
   width: 239px;
   height: 485px;
-  -webkit-transform: translateX(120px);
-          transform: translateX(120px);
-  opacity: 0;
   background-image: url("../../images/top-markets-img.png");
   background-repeat: no-repeat;
   background-position: center;
