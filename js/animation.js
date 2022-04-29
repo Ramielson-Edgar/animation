@@ -53,7 +53,7 @@ gsap.to(".platform-section-header", {
   "clip-path": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
 });
 
-gsap.to(".header-pips, .header-description, .allpips-logo", {
+gsap.to(".header-pips, .header-description, .platforms-allpips-logo", {
   scrollTrigger: {
     trigger: ".header-pips",
     start: "-50px center",

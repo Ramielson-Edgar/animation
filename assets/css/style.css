@@ -798,13 +798,8 @@ ul {
   height: 13px;
 }
 
-.support__section .support__section-header {
-  margin-bottom: 54px;
-}
-
-.support__section .support__section-header .support__section-header-description {
-  font-size: 1.25rem;
-  color: #817e7e;
+.support__section .section__header {
+  margin-bottom: 60px;
 }
 
 .support__section .support-wrapper .support-list {
@@ -1424,7 +1419,7 @@ ul {
     background-size: contain;
   }
   .top-markets__section .group {
-    top: -90px;
+    top: -60px;
   }
   .platforms__section {
     margin-bottom: 0;
@@ -1457,8 +1452,11 @@ ul {
     width: 20%;
     height: 20%;
   }
+  .account__types-section .account__types-header {
+    margin-bottom: 0;
+  }
   .account__types-section .account__wrapper {
-    margin: 0 0 580px;
+    margin: 0 0 600px;
   }
   .account__types-section .account__wrapper .account__wrapper-info {
     display: none;
@@ -1557,9 +1555,6 @@ ul {
   .owl-carousel {
     padding-left: 5px !important;
   }
-  .markets__wrapper-img {
-    display: none;
-  }
 }
 
 @media (max-width: 576.98px) {
@@ -1627,6 +1622,20 @@ ul {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .copy__trading-section .phones-mb {
+    margin-bottom: 70px;
+  }
+  .copy__trading-section .copy-trade-img {
+    top: 0;
+  }
+  .copy__trading-section .markets__wrapper-img .trade-apple {
+    left: -298px;
+    top: 110px;
+  }
+  .copy__trading-section .markets__wrapper-img .trade-eth {
+    top: -10px;
+    right: 110px;
+  }
   .start__trading .start__trading-wrapper .base-btn {
     margin: 0 auto;
   }
@@ -1647,6 +1656,9 @@ ul {
   }
   .support__section .icon-user-plus::after {
     left: 0;
+  }
+  .top-markets__section::before {
+    display: none;
   }
   .top-markets__section .top__markets-header {
     text-align: center;

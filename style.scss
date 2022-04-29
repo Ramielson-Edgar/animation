@@ -516,16 +516,16 @@ ul {
     }
 
     .trade-apple {
-        left: -580px;
-        top: 200px;
+      left: -580px;
+      top: 200px;
 
       background-image: url("../../images/trade-apple.webp");
       z-index: 10;
     }
 
     .trade-eth {
-        top: -90px;
-        right: 390px;
+      top: -90px;
+      right: 390px;
 
       background-image: url("../../images/trade-eth.webp");
       z-index: 10;
@@ -778,13 +778,9 @@ ul {
 
 // SUPPORT SECTION
 .support__section {
-  .support__section-header {
-    margin-bottom: 54px;
 
-    .support__section-header-description {
-      font-size: 1.25rem;
-      color: #817e7e;
-    }
+  .section__header {
+    margin-bottom: 60px;
   }
 
   .support-wrapper {
@@ -1383,13 +1379,14 @@ ul {
     }
 
     .group {
-      top: -90px;
+      top: -60px;
     }
   }
 
   .platforms__section {
     margin-bottom: 0;
   }
+
   .copy__trading-section {
     padding: 300px 0 70px;
   }
@@ -1425,8 +1422,13 @@ ul {
   }
 
   .account__types-section {
+
+    .account__types-header {
+      margin-bottom: 0;
+    }
+
     .account__wrapper {
-      margin: 0 0 580px;
+      margin: 0 0 600px;
 
       .account__wrapper-info {
         display: none;
@@ -1527,9 +1529,6 @@ ul {
     padding-left: 5px !important;
   }
 
-  .markets__wrapper-img {
-    display: none;
-  }
 }
 
 @media (max-width: 576.98px) {
@@ -1601,6 +1600,27 @@ ul {
     .split {
       justify-content: center;
     }
+
+    .phones-mb {
+      margin-bottom: 70px;
+    }
+
+    .copy-trade-img {
+      top: 0;
+    }
+
+    .markets__wrapper-img {
+
+      .trade-apple {
+        left: -298px;
+        top: 110px;
+      }
+
+      .trade-eth {
+        top: -10px;
+        right: 110px;
+      }
+    }
   }
 
   //START TRADING SECTION
@@ -1628,6 +1648,10 @@ ul {
 
   //TOP MARKETS
   .top-markets__section {
+    &::before {
+      display: none;
+    }
+
     .top__markets-header {
       text-align: center;
       justify-content: center;
