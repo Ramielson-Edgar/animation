@@ -514,13 +514,13 @@ ul {
 
 .copy__trading-section .markets__wrapper-img .trade-gold {
   top: -170px;
-  left: -240px;
+  left: -300px;
   background-image: url("../../images/trade-gold.webp");
   z-index: 10;
 }
 
 .copy__trading-section .markets__wrapper-img .trade-apple {
-  left: -450px;
+  left: -580px;
   top: 200px;
   background-image: url("../../images/trade-apple.webp");
   z-index: 10;
@@ -528,7 +528,7 @@ ul {
 
 .copy__trading-section .markets__wrapper-img .trade-eth {
   top: -90px;
-  right: 300px;
+  right: 390px;
   background-image: url("../../images/trade-eth.webp");
   z-index: 10;
 }
@@ -887,13 +887,13 @@ ul {
   overflow: hidden;
   display: block;
   content: "";
-  top: -40%;
+  top: 60%;
   left: 70%;
-  max-width: 239px;
-  max-height: 485px;
-  width: 239px;
-  height: 485px;
-  background-image: url("../../images/top-markets-img.webp");
+  max-width: 180px;
+  max-height: 365px;
+  width: 180px;
+  height: 365px;
+  background-image: url("/images/Group 1075.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1414,7 +1414,7 @@ ul {
   .top-markets__section::before {
     max-width: 100%;
     max-height: 100%;
-    top: -25%;
+    top: 108%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -1427,7 +1427,10 @@ ul {
     top: -90px;
   }
   .platforms__section {
-    margin-bottom: 300px;
+    margin-bottom: 0;
+  }
+  .copy__trading-section {
+    padding: 300px 0 70px;
   }
 }
 
