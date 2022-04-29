@@ -893,7 +893,7 @@ ul {
   max-height: 365px;
   width: 180px;
   height: 365px;
-  background-image: url("/images/Group 1075.png");
+  background-image: url("../../images/top-markets-img.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1412,15 +1412,15 @@ ul {
             justify-content: flex-end;
   }
   .top-markets__section::before {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 370px;
+    max-height: 749px;
     top: 108%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 537px;
-    height: 237px;
-    background-image: url("../../images/top-markets-img-vertical.webp");
+    width: 370px;
+    height: 749px;
+    background-image: url("../../images/top-markets-vertical.webp");
     background-size: contain;
   }
   .top-markets__section .group {
