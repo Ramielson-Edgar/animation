@@ -21,7 +21,7 @@
 .header-mt4-desc,
 .meta-trader-logo,
 .platform-section-header,
-.allpips-logo,
+.platforms-allpips-logo,
 .header-pips,
 .header-description,
 .top__markets-sub-description,
@@ -61,10 +61,9 @@
     opacity: 0;
 } 
 
- 
+.purple-btn, 
 .copy-btn,
 .top-market-btn,
-.purple-btn,
 .platform-mt4-btn,
 .research-btn,
 .copy-btn {

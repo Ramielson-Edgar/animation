@@ -1,5 +1,5 @@
 :root {
-  --header-font-family: 'Roboto',sans-serif;
+  --header-font-family: 'Roboto', sans-serif;
   --font-size-35: 2.188rem;
   --font-size-30: 1.875rem;
   --font-size-24: 1.5rem;
@@ -468,6 +468,11 @@ ul {
   color: var(--grey-text);
 }
 
+.copy__trading-section .copy-trade-img {
+  position: relative;
+  bottom: -70px;
+}
+
 .copy__trading-section .copy__trading-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -508,44 +513,30 @@ ul {
 }
 
 .copy__trading-section .markets__wrapper-img .trade-gold {
-  top: 120px;
-  left: -250px;
+  top: -170px;
+  left: -240px;
   background-image: url("../../images/trade-gold.png");
   z-index: 10;
 }
 
-.copy__trading-section .markets__wrapper-img .trade-nasdaq {
-  top: 250px;
-  left: -440px;
-  background-image: url("../../images/trade-nasdaq.png");
-  z-index: 10;
-}
-
 .copy__trading-section .markets__wrapper-img .trade-apple {
-  left: -460px;
-  top: 20px;
+  left: -450px;
+  top: 200px;
   background-image: url("../../images/trade-apple.png");
   z-index: 10;
 }
 
 .copy__trading-section .markets__wrapper-img .trade-eth {
-  top: -180px;
-  left: -470px;
+  top: -90px;
+  right: 300px;
   background-image: url("../../images/trade-eth.png");
-  z-index: 10;
-}
-
-.copy__trading-section .markets__wrapper-img .trade-btc {
-  top: -270px;
-  left: -180px;
-  background-image: url("../../images/trade-btc.png");
   z-index: 10;
 }
 
 .copy__trading-section .markets__wrapper-img .markets__wrapper-item {
   position: absolute;
-  width: 270px;
-  height: 68px;
+  width: 190px;
+  height: 60px;
   color: var(--white-bg-color);
   background-color: rgba(255, 255, 255, 0.6);
   padding: 10px;
@@ -902,7 +893,7 @@ ul {
   max-height: 485px;
   width: 239px;
   height: 485px;
-  background-image: url("../../images/top-markets-img.png");
+  background-image: url("../../images/top-markets-img.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1149,7 +1140,7 @@ ul {
 }
 
 .icon-fiat::before {
-  background-image: url("../../icons-slider/icon-fiat.png");
+  background-image: url("../../icons-slider/icon-fiat.webp");
   z-index: 3;
   left: 40%;
 }
@@ -1159,29 +1150,29 @@ ul {
 }
 
 .icon-crypto::before {
-  background-image: url("../../icons-slider/icon-crypto.png");
+  background-image: url("../../icons-slider/icon-crypto.webp");
 }
 
 .icon-cent::before {
-  background-image: url("../../icons-slider/icon-cent.png");
+  background-image: url("../../icons-slider/icon-cent.webp");
 }
 
 .icon-standard::before {
   left: 62%;
-  background-image: url("../../icons-slider/knife.png");
+  background-image: url("../../icons-slider/knife.webp");
 }
 
 .icon-premium::before {
   left: 60%;
-  background-image: url("../../icons-slider/crown.png");
+  background-image: url("../../icons-slider/crown.webp");
 }
 
 .icon-micro::before {
-  background-image: url("../../icons-slider/coin.png");
+  background-image: url("../../icons-slider/coin.webp");
 }
 
 .icon-pro::before {
-  background-image: url("../../icons-slider/helm.png");
+  background-image: url("../../icons-slider/helm.webp");
 }
 
 .account__types-section .account__wrapper {
@@ -1429,7 +1420,7 @@ ul {
             transform: translate(-50%, -50%);
     width: 537px;
     height: 237px;
-    background-image: url("../../images/top-markets-img-vertical.png");
+    background-image: url("../../images/top-markets-img-vertical.webp");
     background-size: contain;
   }
   .top-markets__section .group {

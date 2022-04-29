@@ -69,12 +69,13 @@ gsap.to(".header-pips, .header-description, .allpips-logo", {
 gsap.to(".purple-btn", {
   scrollTrigger: {
     trigger: ".header-description",
-    start: "top center",
+    start: "-150px center",
+    markers: true,
     toggleActions: "play pause resume none",
   },
   top: 0,
   opacity: 1,
-  duration: 1.8,
+  duration: 1.1,
 });
 
 gsap.to(".pips-devices, .pips-glass-card", {
@@ -107,12 +108,12 @@ gsap.to(".header-mt4, .header-mt4-desc, .meta-trader-logo", {
 gsap.to(".platform-mt4-btn", {
   scrollTrigger: {
     trigger: ".platform-mt4-btn",
-    start: "-40px center",
+    start: "-150px center",
     toggleActions: "play pause resume none",
   },
   top: 0,
   opacity: 1,
-  duration: 1.8,
+  duration: 1.1,
 });
 
 gsap.to(".mt4-platform-img, .mt4-glass-card", {
@@ -147,12 +148,12 @@ gsap.to(
 gsap.to(".top-market-btn", {
   scrollTrigger: {
     trigger: ".top-market-btn",
-    start: "top center",
+    start: "-150px center",
     toggleActions: "play pause resume none",
   },
   top: 0,
   opacity: 1,
-  duration: 1.5,
+  duration: 1.1,
 });
 
 gsap.to(".img", {
@@ -163,7 +164,7 @@ gsap.to(".img", {
   },
   stagger: 0.4,
   scale: 1,
-  "clip-path": "circle(50.5% at 50% 50%)",
+  "clip-path": "circle(70.50% at 50% 70%)",
   opacity: 1,
   delay: 0.5,
   duration: 1.8,
@@ -185,12 +186,12 @@ gsap.to(".copy-header, .copy-desc", {
 gsap.to(".copy-btn", {
   scrollTrigger: {
     trigger: ".copy-btn",
-    start: "top center",
+    start: "-150px center",
     toggleActions: "play pause resume none",
   },
   top: 0,
   opacity: 1,
-  duration: 1.5,
+  duration: 1.1,
 });
 
 gsap.to(".phone-left, .phone-right", {
@@ -199,7 +200,6 @@ gsap.to(".phone-left, .phone-right", {
     start: "-100px center",
     toggleActions: "play pause resume none",
   },
-
   stagger: 0.6,
   duration: 2,
   translateY: 0,
@@ -247,12 +247,12 @@ gsap.to(".research-header, .research-desc", {
 gsap.to(".research-btn", {
   scrollTrigger: {
     trigger: ".research-btn",
-    start: "-80px center",
+    start: "-150px center",
     toggleActions: "play pause resume none",
   },
   top: 0,
   opacity: 1,
-  duration: 1.5,
+  duration: 1.1,
 });
 
 gsap.to(
