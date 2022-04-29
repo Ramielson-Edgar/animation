@@ -70,7 +70,6 @@ gsap.to(".purple-btn", {
   scrollTrigger: {
     trigger: ".header-description",
     start: "-150px center",
-    markers: true,
     toggleActions: "play pause resume none",
   },
   top: 0,

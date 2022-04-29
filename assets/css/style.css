@@ -515,21 +515,21 @@ ul {
 .copy__trading-section .markets__wrapper-img .trade-gold {
   top: -170px;
   left: -240px;
-  background-image: url("../../images/trade-gold.png");
+  background-image: url("../../images/trade-gold.webp");
   z-index: 10;
 }
 
 .copy__trading-section .markets__wrapper-img .trade-apple {
   left: -450px;
   top: 200px;
-  background-image: url("../../images/trade-apple.png");
+  background-image: url("../../images/trade-apple.webp");
   z-index: 10;
 }
 
 .copy__trading-section .markets__wrapper-img .trade-eth {
   top: -90px;
   right: 300px;
-  background-image: url("../../images/trade-eth.png");
+  background-image: url("../../images/trade-eth.webp");
   z-index: 10;
 }
 
