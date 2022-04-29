@@ -255,7 +255,7 @@ gsap.to(".research-btn", {
 });
 
 gsap.to(
-  ".support-header, .support__section-heading,.support__section-description",
+  ".support-header, .support__section-heading, .support__section-description",
   {
     scrollTrigger: {
       trigger: ".support__section-heading",
