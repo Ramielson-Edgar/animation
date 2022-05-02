@@ -527,7 +527,7 @@ ul {
 }
 
 .copy__trading-section .markets__wrapper-img .trade-eth {
-  top: -90px;
+  top: -120px;
   right: 390px;
   background-image: url("../../images/trade-eth.webp");
   z-index: 10;
@@ -786,16 +786,25 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 800;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .start__trading .start__trading-wrapper .start__trading-list .start__trading-item .start-body .link-register:hover, .start__trading .start__trading-wrapper .start__trading-list .start__trading-item .start-body .link-register:focus {
   color: #0d6efd;
 }
 
-.start__trading .start__trading-wrapper .start__trading-list .start__trading-item .start-body .link-register .arrow-right {
+.start__trading .start__trading-wrapper .start__trading-list .start__trading-item .start-body .link-register .arrow-right-blue {
   margin-left: 10px;
   width: 13px;
   height: 13px;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.start__trading .start__trading-wrapper .start__trading-list .start__trading-item .start-body .link-register:hover .arrow-right-blue {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 .support__section .section__header {

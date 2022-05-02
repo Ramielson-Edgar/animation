@@ -524,7 +524,7 @@ ul {
     }
 
     .trade-eth {
-      top: -90px;
+      top: -120px;
       right: 390px;
 
       background-image: url("../../images/trade-eth.webp");
@@ -754,21 +754,29 @@ ul {
         }
 
         .start-body {
+
           .link-register {
             display: flex;
             align-items: center;
             font-weight: 800;
+            transform: translateX(0);
 
             &:hover,
             &:focus {
               color: #0d6efd;
             }
 
-            .arrow-right {
+            .arrow-right-blue {
               margin-left: 10px;
               width: 13px;
               height: 13px;
+              transition: all .3s ease-in;
             }
+          }
+
+          .link-register:hover .arrow-right-blue {
+            transform: translateX(10px);
+          
           }
         }
       }

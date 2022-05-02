@@ -119,8 +119,10 @@ gsap.to(".mt4-platform-img, .mt4-glass-card", {
   scrollTrigger: {
     trigger: ".mt4-platform-img",
     start: "200px center",
+    markers: true,
     toggleActions: "play pause resume none",
   },
+
   stagger: 0.4,
   duration: 1.4,
   y: 0,
