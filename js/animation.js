@@ -164,7 +164,7 @@ gsap.to(".img", {
   },
   stagger: 0.4,
   scale: 1,
-  "clip-path": "circle(70.50% at 50% 70%)",
+  "clip-path": "circle(80.50% at 50% 80%)",
   opacity: 1,
   delay: 0.5,
   duration: 1.8,

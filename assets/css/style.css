@@ -1,5 +1,5 @@
 :root {
-  --header-font-family: 'Roboto', sans-serif;
+  --header-font-family: "Roboto", sans-serif;
   --font-size-35: 2.188rem;
   --font-size-30: 1.875rem;
   --font-size-24: 1.5rem;
@@ -133,6 +133,7 @@ ul {
 
 .group {
   position: relative;
+  width: 460px;
   min-height: 500px;
 }
 
@@ -513,8 +514,8 @@ ul {
 }
 
 .copy__trading-section .markets__wrapper-img .trade-gold {
-  top: -170px;
-  left: -300px;
+  top: -180px;
+  left: -190px;
   background-image: url("../../images/trade-gold.webp");
   z-index: 10;
 }
@@ -798,8 +799,8 @@ ul {
   margin-left: 10px;
   width: 13px;
   height: 13px;
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .start__trading .start__trading-wrapper .start__trading-list .start__trading-item .start-body .link-register:hover .arrow-right-blue {
@@ -868,7 +869,7 @@ ul {
   display: block;
   content: "";
   top: -20px;
-  right: -20px;
+  right: 0px;
   width: 80px;
   height: 80px;
   border: transparent;
@@ -895,8 +896,8 @@ ul {
   overflow: hidden;
   display: block;
   content: "";
-  top: 66%;
-  left: 70%;
+  top: 60%;
+  left: 80%;
   max-width: 180px;
   max-height: 365px;
   width: 180px;
@@ -1373,6 +1374,19 @@ ul {
   z-index: 100000;
 }
 
+@media (max-width: 1198px) {
+  .copy__trading-section .markets__wrapper-img .trade-apple,
+  .copy__trading-section .markets__wrapper-img .trade-eth {
+    left: clamp(-478px, -200px, -700px);
+  }
+  .copy__trading-section .markets__wrapper-img .trade-gold {
+    top: clamp(-140px, -90px, -200px);
+  }
+  .copy__trading-section .markets__wrapper-img .trade-apple {
+    top: clamp(160px, 120px, 200px);
+  }
+}
+
 @media (max-width: 991.98px) {
   .research__section .images {
     -webkit-box-ordinal-group: 1;
@@ -1390,6 +1404,16 @@ ul {
   }
   .copy__trading-section .phones-mb {
     margin-bottom: 140px;
+  }
+  .copy__trading-section .markets__wrapper-img .trade-apple {
+    top: clamp(160px, 120px, 200px);
+    left: -580px;
+  }
+  .copy__trading-section .markets__wrapper-img .trade-eth {
+    left: clamp(-578px, -200px, -700px);
+  }
+  .copy__trading-section .markets__wrapper-img .trade-gold {
+    top: clamp(-170px, -90px, -200px);
   }
   .support__section .text {
     -webkit-box-ordinal-group: 2;
@@ -1428,7 +1452,8 @@ ul {
     background-size: contain;
   }
   .top-markets__section .group {
-    top: -60px;
+    top: -70px;
+    height: 510px;
   }
   .platforms__section {
     margin-bottom: 0;
@@ -1456,6 +1481,10 @@ ul {
   .copy__trading-section .split {
     margin-left: 0;
   }
+  .copy__trading-section .markets__wrapper-img .trade-eth,
+  .copy__trading-section .markets__wrapper-img .trade-apple {
+    left: clamp(-528px, -200px, -700px);
+  }
   .advantage__section::before {
     top: 30%;
     width: 20%;
@@ -1480,6 +1509,17 @@ ul {
   .account__types-section .account__wrapper .account__card .account__table .account__body .account-row .account-value {
     text-align: right;
   }
+  .account__types-section .account__wrapper .slider-item .icon-micro::before,
+  .account__types-section .account__wrapper .slider-item .icon-pro::before,
+  .account__types-section .account__wrapper .slider-item .icon-premium::before,
+  .account__types-section .account__wrapper .slider-item .icon-standard::before,
+  .account__types-section .account__wrapper .slider-item .icon-cent::before,
+  .account__types-section .account__wrapper .slider-item .icon-crypto::before {
+    left: 80%;
+  }
+  .account__types-section .account__wrapper .slider-item .icon-fiat::before {
+    left: 60%;
+  }
   .section__header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1493,10 +1533,18 @@ ul {
             align-items: center;
     text-align: center;
   }
-  .meta-trader-logo,
-  .allpips-logo {
-    display: block;
-    margin: 0 auto;
+  .platforms__section .platforms-img {
+    text-align: center;
+  }
+  .platforms__section .card-info {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .platforms__section .text {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
   }
   .support__section-header,
   .top__markets-header {
@@ -1570,8 +1618,15 @@ ul {
   .section-padding {
     padding: 50px 0;
   }
+  .section__header .section__header-heading {
+    font-size: 27px;
+    line-height: 1.1;
+  }
   .advantage__section::before {
     left: 0%;
+  }
+  .advantage__section::after {
+    top: 80%;
   }
   .advantage__section .advantage-wrapper .advantage__list {
     -ms-grid-columns: 1fr;
@@ -1635,15 +1690,39 @@ ul {
     margin-bottom: 70px;
   }
   .copy__trading-section .copy-trade-img {
+    position: relative;
     top: 0;
   }
-  .copy__trading-section .markets__wrapper-img .trade-apple {
-    left: -298px;
-    top: 110px;
+  .copy__trading-section .column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .copy__trading-section .p-relative {
+    position: relative;
+  }
+  .copy__trading-section .markets__wrapper-img {
+    position: static;
   }
   .copy__trading-section .markets__wrapper-img .trade-eth {
-    top: -10px;
-    right: 110px;
+    top: 0;
+    left: 0;
+  }
+  .copy__trading-section .markets__wrapper-img .trade-apple {
+    top: unset;
+    left: -5px;
+    bottom: 50px;
+  }
+  .copy__trading-section .markets__wrapper-img .trade-gold {
+    top: -30px;
+    right: 0;
+    left: unset;
+  }
+  .copy__trading-section .markets__wrapper-img .markets__wrapper-item {
+    width: 200px;
+    height: 70px;
+    background-position: -9px 4px;
   }
   .start__trading .start__trading-wrapper .base-btn {
     margin: 0 auto;
@@ -1665,6 +1744,9 @@ ul {
   }
   .support__section .icon-user-plus::after {
     left: 0;
+  }
+  .top-markets__section {
+    overflow: hidden;
   }
   .top-markets__section::before {
     display: none;
@@ -1693,8 +1775,8 @@ ul {
             align-items: center;
   }
   .top-markets__section .group {
-    top: 70%;
-    left: 0;
+    top: 50%;
+    left: calc(50% + -129px);
   }
   .top-markets__section .group .icon-us-dkk {
     top: 310px;
@@ -1801,11 +1883,68 @@ ul {
   .account__types-section .account__card .account__table .account__body .account-row .account-value {
     text-align: left;
   }
+  .account__types-section .account__wrapper .slider-item .icon-micro::before,
+  .account__types-section .account__wrapper .slider-item .icon-pro::before,
+  .account__types-section .account__wrapper .slider-item .icon-premium::before,
+  .account__types-section .account__wrapper .slider-item .icon-standard::before,
+  .account__types-section .account__wrapper .slider-item .icon-cent::before,
+  .account__types-section .account__wrapper .slider-item .icon-crypto::before {
+    left: 70%;
+  }
+  .account__types-section .account__wrapper .slider-item .icon-fiat::before {
+    left: 60%;
+  }
   .owl-theme .owl-dots .owl-dot span {
     width: 10px !important;
   }
   .owl-theme .owl-nav .bi-arrow-left-short {
     margin-top: 80px;
+  }
+  .support__section .mb-70 {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .top-markets__section .group {
+    left: calc(80% - 230px);
+  }
+  .copy__trading-section .markets__wrapper-img .markets__wrapper-item {
+    width: 120px;
+    height: 50px;
+    background-position: -9px 4px;
+  }
+}
+
+@media (max-width: 320px) {
+  .account__types-section .account__wrapper .slider-item .icon-micro::before,
+  .account__types-section .account__wrapper .slider-item .icon-pro::before,
+  .account__types-section .account__wrapper .slider-item .icon-premium::before,
+  .account__types-section .account__wrapper .slider-item .icon-standard::before,
+  .account__types-section .account__wrapper .slider-item .icon-cent::before,
+  .account__types-section .account__wrapper .slider-item .icon-crypto::before {
+    left: 70%;
+  }
+  .account__types-section .account__wrapper .slider-item .icon-fiat::before {
+    left: 50%;
+  }
+  .top-markets__section .mb-5 {
+    margin-bottom: 0 !important;
+  }
+  .top-markets__section .group {
+    top: -50px;
+    left: 0;
+    height: 410px;
+    min-height: 450px;
+  }
+  .support__section .section__header {
+    margin-bottom: 0;
+  }
+  .support__section .support-wrapper .support-list .support-item .link-wrap {
+    background-position: 98%;
+  }
+  .support__section .support-wrapper .support-list .support-item .link-wrap p {
+    font-size: 14px;
   }
 }
 

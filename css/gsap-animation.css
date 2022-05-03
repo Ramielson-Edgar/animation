@@ -75,7 +75,7 @@
 
  .img {
     transform: scale(0);
-    -webkit-clip-path: circle(0.5% at 50% 50%);
+    -webkit-clip-path: circle(0.0% at 50% 50%);
     clip-path: circle(0.0% at 50% 50%);
     transform: translateY(0px);
     opacity: 0;
