@@ -119,8 +119,20 @@ gsap.to(".mt4-platform-img, .mt4-glass-card", {
   "clip-path": "polygon(0% 0%, 200% 0%, 200% 200%, 0% 200%)",
 });
 
+//.markets-header,
+gsap.to(".markets-header", {
+  scrollTrigger: {
+    trigger: ".markets-header",
+    toggleActions: "play pause resume none",
+  },
+  duration: 1,
+  y: 0,
+  opacity: 1,
+  "clip-path": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+});
+
 gsap.to(
-  ".markets-header, .top__markets-heading, .top__markets-sub-description, .top__markets-description",
+  ".top__markets-heading, .top__markets-sub-description, .top__markets-description",
   {
     scrollTrigger: {
       trigger: ".top__markets-heading",
@@ -209,7 +221,6 @@ gsap.to(".research-img", {
   opacity: 1,
   y: 0,
   duration: 1,
-  delay: 0,
   "clip-path": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
 });
 
