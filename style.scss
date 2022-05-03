@@ -538,7 +538,7 @@ ul {
       height: 60px;
 
       color: var(--white-bg-color);
-      background-color: rgba(255, 255, 255, 0.6);
+      background-color: var(--white-bg-color);
 
       padding: 10px;
       border-radius: 12px;
@@ -962,7 +962,7 @@ ul {
     border: 1px solid var(--white-bg-color);
     padding: 25px 100px 39px;
 
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: var(--white-bg-color);
     border: 1px solid #ffffff;
     box-shadow: 30px 30px 50px rgba(169, 169, 169, 0.1);
     border-radius: 10px;
@@ -1242,7 +1242,7 @@ ul {
             position: relative;
             height: 470px;
 
-            background: rgb(250, 250, 250);
+            background-color: rgb(250, 250, 250);
             z-index: 10;
 
             .account__body {
@@ -2036,26 +2036,21 @@ ul {
   }
 }
 
-@supports (backdrop-filter: blur(1rem)) {
-  .account__table {
-    backdrop-filter: blur(1rem);
-  }
-}
 
 @supports (backdrop-filter: blur(20px)) {
   .platforms__section-card {
     backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.6);
   }
+    .advantage__item {
+      backdrop-filter: blur(20px);
+    }
 }
 
 @supports (backdrop-filter: blur(50px)) {
   .markets__wrapper-item {
     backdrop-filter: blur(50px);
+    background-color: rgba(255, 255, 255, 0.7);
   }
 }
 
-@supports (backdrop-filter: blur(20px)) {
-  .advantage__item {
-    backdrop-filter: blur(20px);
-  }
-}
