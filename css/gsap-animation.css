@@ -1,79 +1,64 @@
 .support-item,
 .markets__wrapper-item,
-.start__trading-item,
-.advantage__item {
+.start__trading-item {
     opacity: 0;
     transform: translateY(80px);
 }
 
+.research-img,
 .start__trading-header,
 .support-header,
 .support__section-heading,
-.support__section-description,
-.research-header,
+.support__section-description,  
+.research-header,  
 .research-desc,
-.copy-desc,
+.copy-desc, 
 .copy-header,
+.account__types-header,
 .markets-header,
 .mt4-platform-img,
 .mt4-glass-card,
 .header-mt4,
 .header-mt4-desc,
 .meta-trader-logo,
-.platform-section-header,
-.platforms-allpips-logo,
-.header-pips,
-.header-description,
-.top__markets-sub-description,
+.platforms-allpips,  
+ .top__markets-sub-description,
 .top__markets-heading,
 .top__markets-description,
-.advantage__section-header,
-.copy__trading-desc,
-.copy__trading-heading,
+ .copy__trading-desc, 
+ .copy__trading-heading,
 .research__section-heading,
-.research__section-desc {
-    line-height: 1.5;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    opacity: 0;
-    transform: translateY(60px);
+.research__section-desc
+
+.advantage__section-header {
+opacity: 0;
+transform: translateY(60px);
 }
+ 
+ 
+
 
 
 .pips-devices,
 .pips-glass-card,
-.support-section-img,
-.phone-right,
-.phone-left {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    transform: translateY(120px);
+.support-section-img{
+opacity: 0;
+transform: translateY(120px);
 }
 
-.phone-right {
-    transform: translateY(-150px);
-}
 
-.research-img {
-    transform: translateY(60px);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    opacity: 0;
-} 
-
-.purple-btn, 
+ 
 .copy-btn,
 .top-market-btn,
-.platform-mt4-btn,
 .research-btn,
 .copy-btn {
     position: relative;
-    top: 60px;
+    top: 40px;
     opacity: 0;
 } 
 
 
- .img {
+ .img-top-markets {
     transform: scale(0);
     -webkit-clip-path: circle(0.0% at 50% 50%);
     clip-path: circle(0.0% at 50% 50%);
@@ -81,3 +66,63 @@
     opacity: 0;
 }
 
+
+@media (max-width:768.98px) {
+    .support-item,
+    .markets__wrapper-item,
+    .start__trading-item,
+    .advantage__item,
+    .research-img,
+    .start__trading-header,
+    .support-header,
+    .support__section-heading,
+    .support__section-description,
+    .research-header,
+    .research-desc,
+    .copy-desc,
+    .copy-header,
+    .markets-header,
+    .mt4-platform-img,
+    .mt4-glass-card,
+    .header-mt4,
+    .header-mt4-desc,
+    .meta-trader-logo,
+    .platform-section-header,
+    .platforms-allpips-logo,
+    .header-pips,
+    .header-description,
+    .top__markets-sub-description,
+    .top__markets-heading,
+    .top__markets-description,
+    .advantage__section-header,
+    .copy__trading-desc,
+    .copy__trading-heading,
+    .research__section-heading,
+    .research__section-desc,
+    .pips-devices,
+    .pips-glass-card,
+    .support-section-img {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    
+    .purple-btn,
+    .copy-btn,
+    .top-market-btn,
+    .platform-mt4-btn,
+    .research-btn,
+    .copy-btn {
+        position: relative;
+        top: 0;
+        opacity: 1;
+    }
+    
+    
+    .img-top-markets {
+        clip-path: circle(80.50% at 50% 50%);
+ 
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

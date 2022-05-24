@@ -67,7 +67,50 @@ body {
   background-color: var(--white-bg-color);
   margin: 0;
 }
+// BLOB
+@keyframes transform {
 
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+  }
+
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+  }
+
+  42% {
+    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+  }
+
+  56% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+  }
+
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+  }
+
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
+}
+
+@keyframes movement {
+
+  0%,
+  100% {
+    transform: none;
+  }
+
+  50% {
+    transform: translateY(20%) rotateY(10deg);
+  }
+}
 //DEFAULTS
 p {
   margin: 0;
@@ -88,6 +131,79 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.owl-nav {
+  position: absolute;
+  width: 100%;
+
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 10000;
+}
+
+.bi-arrow-left-short {
+  position: absolute;
+  left: clamp(250px, 30%, 3rem);
+}
+
+.bi-arrow-right-short::before,
+.bi-arrow-left-short::before {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 60px;
+  height: 60px;
+
+  margin: 10px;
+  background-color: #4850E5;
+  border-radius: 50%;
+  z-index: 10000;
+}
+
+.bi-arrow-right-short {
+  position: absolute;
+  right: 0%;
+  z-index: 10000;
+}
+
+.bi {
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.owl-dots {
+  position: absolute;
+  top: 90%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 30px !important;
+  height: 2px !important;
+  border-radius: 0 !important;
+}
+
+
+.owl-carousel {
+  padding-left: clamp(300px, 30%, 2rem);
+  transition: all 0.3s ease-in;
+  z-index: 10;
+}
+
+.owl-stage-outer {
+  margin-top: -120px;
+  height: 800px;
 }
 
 //BG COLOR
@@ -139,19 +255,16 @@ ul {
   }
 }
 
-.main-nav {
-  padding: 30px;
-}
 
-// TOP MARKETS ICONS
 
+// TOP MARKETS ICON
 .group {
   position: relative;
   width: 460px;
   min-height: 500px;
 }
 
-.img {
+.img-top-markets {
   display: block;
   position: absolute;
 
@@ -395,6 +508,16 @@ ul {
 }
 
 // BTN
+@keyframes button-gradient {
+  0% {
+    background-position: left;
+  }
+
+  100% {
+    background-position: right;
+  }
+}
+
 .base-btn {
   display: flex;
   justify-content: center;
@@ -426,15 +549,7 @@ ul {
   }
 }
 
-@keyframes button-gradient {
-  0% {
-    background-position: left;
-  }
-
-  100% {
-    background-position: right;
-  }
-}
+ 
 
 .ghost-btn {
   color: var(--blue-text);
@@ -538,7 +653,7 @@ ul {
       height: 60px;
 
       color: var(--white-bg-color);
-      background-color: var(--white-bg-color);
+          background-color: rgba(255, 255, 255, 0.7);
 
       padding: 10px;
       border-radius: 12px;
@@ -677,49 +792,6 @@ ul {
         }
       }
     }
-  }
-}
-
-// BLOB
-@keyframes transform {
-  0%,
-  100% {
-    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
-  }
-
-  14% {
-    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
-  }
-
-  28% {
-    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
-  }
-
-  42% {
-    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
-  }
-
-  56% {
-    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
-  }
-
-  70% {
-    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
-  }
-
-  84% {
-    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
-  }
-}
-
-@keyframes movement {
-  0%,
-  100% {
-    transform: none;
-  }
-
-  50% {
-    transform: translateY(20%) rotateY(10deg);
   }
 }
 
@@ -961,8 +1033,7 @@ ul {
 
     border: 1px solid var(--white-bg-color);
     padding: 25px 100px 39px;
-
-    background-color: var(--white-bg-color);
+    background-color: rgba(255, 255, 255, 0.6);
     border: 1px solid #ffffff;
     box-shadow: 30px 30px 50px rgba(169, 169, 169, 0.1);
     border-radius: 10px;
@@ -2040,7 +2111,7 @@ ul {
 @supports (backdrop-filter: blur(20px)) {
   .platforms__section-card {
     backdrop-filter: blur(20px);
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: var(--white-bg-color);
   }
     .advantage__item {
       backdrop-filter: blur(20px);
@@ -2050,7 +2121,7 @@ ul {
 @supports (backdrop-filter: blur(50px)) {
   .markets__wrapper-item {
     backdrop-filter: blur(50px);
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: var(--white-bg-color);
   }
 }
 
